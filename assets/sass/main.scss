@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header{
+    background-color: rgb(64,180,244);
+.offer{
+    background-color: black;
+    .content{
+        padding: 1px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+        margin: 0 auto;
+        p{
+            margin-top: 10px;
+            font-size: 14px;
+            padding: 5px;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}
+
+
+.container{
+    padding-left:15px ;
+    padding-right:15px;
+    .row{
+        .navbar{
+            .navbar-logo{
+                display: flex;
+                justify-content: center;
+            }
+            .menu{
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    height: 40px;
+                    align-items: end;
+                    li{
+                        list-style-type:none ;
+                        a{
+                            color: white;
+                            text-decoration: none;
+                            font-size: 15px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+            .icons{
+                display: flex;
+                justify-content: end;
+                i{
+                    font-size: 20px;
+                    margin-right: 20px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.onhoveraccesories{
+    position: absolute;
+    left: 38%;
+}
+.onhoverdrone{
+    position: absolute;
+    left: 30%;
+}
+.onhoverdrone,.onhoveraccesories{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    border: 1px solid gray ;
+    padding: 10px;
+    visibility: hidden;
+    background-color: white;
+    .title{
+        padding-bottom: 5px;
+        border-bottom: 1px solid gray;
+        
+        h6{
+            a{
+                color: black;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            }
+        }
+        p{
+            margin-bottom: 5px;
+            margin-top: 10px;
+           a{
+               color: rgb(52, 52, 52);
+             text-decoration: none;
+           }
+       }
+}
+}
