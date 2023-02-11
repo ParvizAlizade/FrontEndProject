@@ -24,7 +24,6 @@
                   justify-content: center;
                 }
                 .menu {
-                  
                   display: flex;
                   ul {
                     display: flex;
@@ -183,73 +182,71 @@
       }
     }
   }
-  
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-
-  .allnav{
-    .md-navbar{
+  .allnav {
+    .md-navbar {
       height: 6vh;
       align-items: center;
       display: flex;
-      i
-      {
+      i {
         font-size: 18px;
       }
-     .left{
-      .hamburgermenu{
-        .menuItem {
-          display: block;
-          font-size: 20px;
-          color: rgb(59, 59, 59);
-          text-decoration: none;
-        }
-          
-        .hamburger {
-          z-index: 100;
-          border: none;
-          background: white;
-          cursor: pointer;
-        }
-        
-        .xmark {
-          display: none;
-        }
-        
-        .menu {
-          transform: translateX(-100%);
-          transition: transform 0.5s;
-          top: 0;
-          left: 0;
-          right: 0;
-          width: 40%;
-          bottom: 0;
-          z-index: 99;
-          background: white;
-          color: white;
-          list-style: none;
-          position: fixed;
-          padding-top: 4rem;
+      .left {
+        .hamburgermenu {
+          .menuItem {
+            display: block;
+            font-size: 20px;
+            color: rgb(59, 59, 59);
+            text-decoration: none;
+          }
 
-          .accordion-body{
-            li{
-              list-style-type: none;
-              a{
-                text-decoration: none;
-                color: black;
+          .hamburger {
+            z-index: 100;
+            border: none;
+            background: white;
+            cursor: pointer;
+          }
+
+          .xmark {
+            display: none;
+          }
+
+          .menu {
+            transform: translateX(-100%);
+            transition: transform 0.5s;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 40%;
+            bottom: 0;
+            z-index: 99;
+            background: white;
+            color: white;
+            list-style: none;
+            position: fixed;
+            padding-top: 4rem;
+            .accordion-item {
+              border: none;
+            }
+            .accordion-body {
+              li {
+                list-style-type: none;
+                a {
+                  text-decoration: none;
+                  color: black;
+                }
               }
             }
           }
-        }
-        .showMenu {
-          transform: translateY(0);
+          .showMenu {
+            transform: translateY(0);
+          }
         }
       }
-     }
     }
   }
-
 
   .slider {
     .firstitem {
@@ -431,8 +428,7 @@ main {
       }
     }
   }
-  @media only screen and (max-width: 992px) and (min-width: 767px) 
-   {
+  @media only screen and (max-width: 992px) and (min-width: 768px) {
     #AllAboutFabulous {
       height: 85vh;
       display: flex;
@@ -516,8 +512,7 @@ main {
         }
       }
     }
-  
-   }
+  }
   #CustomerReview {
     height: 87vh;
     background-image: url("https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/testimonialbackground.png");
@@ -581,7 +576,7 @@ main {
   }
 
   #Faq {
-    height: 110vh;
+    height: 100vh;
     background-color: rgb(242, 246, 249);
     display: flex;
     align-items: center;
@@ -626,6 +621,7 @@ main {
               display: inline-block;
               letter-spacing: 0.5px;
               text-align: left;
+              color: gray;
             }
           }
           span {
@@ -657,5 +653,130 @@ main {
         transform: rotateY(360deg);
       }
     }
+  }
+
+  #ContactAndSubscribe {
+    background-color: rgb(242, 246, 249);
+    .contact {
+      border: 1px solid rgb(201, 201, 201);
+      padding: 25px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      .text-center {
+        text-align: center;
+        .subtitle {
+          p {
+            font-size: 19px;
+            letter-spacing: 8px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-family: "Poppins", sans-serif;
+            color: #eb4d4b;
+          }
+        }
+        .title {
+          h1 {
+            font-size: 40px;
+            margin-bottom: 14px;
+          }
+        }
+        .line {
+          width: 80px;
+          height: 4px;
+          background: #eb4d4b;
+          margin: 0 auto;
+        }
+      }
+      .inputs {
+        margin-top: 10px;
+        input,
+        textarea {
+          padding: 14px;
+          margin-top: 20px;
+          border-radius: 20px;
+        }
+        button {
+          border-radius: 40px;
+          padding: 10px;
+          margin: 15px auto;
+        }
+      }
+    }
+    .Subscribe {
+      border: 1px solid rgb(201, 201, 201);
+      padding: 25px;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      .text-center {
+        text-align: center;
+        .subtitle {
+          p {
+            font-size: 19px;
+            letter-spacing: 8px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-family: "Poppins", sans-serif;
+            color: #eb4d4b;
+          }
+        }
+        .title {
+          h1 {
+            font-size: 40px;
+            margin-bottom: 14px;
+          }
+        }
+        .line {
+          width: 80px;
+          height: 4px;
+          background: #eb4d4b;
+          margin: 0 auto;
+        }
+      }
+      .titleandcontent {
+        i {
+          font-size: 45px;
+          color: red;
+          margin: 20px auto;
+        }
+      }
+      .input {
+        width: 70%;
+        margin: 30px auto;
+        overflow: hidden;
+        &focus {
+          outline: blue;
+        }
+        input {
+          position: relative;
+          border-radius: 30px;
+          padding: 15px;
+        }
+        button {
+          position: absolute;
+          border-radius: 40px;
+          padding: 15px;
+          padding-left: 30px;
+          padding-right: 30px;
+          right: 0px;
+          z-index: 3;
+        }
+      }
+      .icons {
+        margin-top: 30px;
+        padding-bottom: 27px;
+        i {
+          margin-right: 5px;
+          font-size: 35px;
+          transition: 1.5s;
+          &:hover {
+            transform: rotateY(360deg);
+            transition: 1.5s;
+          }
+        }
+      }
+    }
+
+    
   }
 }
