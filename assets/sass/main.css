@@ -205,7 +205,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  #header .allnav .md-navbar {
+  .allnav .md-navbar {
     height: 6vh;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -214,25 +214,25 @@
     display: -ms-flexbox;
     display: flex;
   }
-  #header .allnav .md-navbar i {
+  .allnav .md-navbar i {
     font-size: 18px;
   }
-  #header .allnav .md-navbar .left .hamburgermenu .menuItem {
+  .allnav .md-navbar .left .hamburgermenu .menuItem {
     display: block;
     font-size: 20px;
     color: #3b3b3b;
     text-decoration: none;
   }
-  #header .allnav .md-navbar .left .hamburgermenu .hamburger {
+  .allnav .md-navbar .left .hamburgermenu .hamburger {
     z-index: 100;
     border: none;
     background: white;
     cursor: pointer;
   }
-  #header .allnav .md-navbar .left .hamburgermenu .xmark {
+  .allnav .md-navbar .left .hamburgermenu .xmark {
     display: none;
   }
-  #header .allnav .md-navbar .left .hamburgermenu .menu {
+  .allnav .md-navbar .left .hamburgermenu .menu {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
     -webkit-transition: -webkit-transform 0.5s;
@@ -251,58 +251,58 @@
     position: fixed;
     padding-top: 4rem;
   }
-  #header .allnav .md-navbar .left .hamburgermenu .menu .accordion-body li {
+  .allnav .md-navbar .left .hamburgermenu .menu .accordion-body li {
     list-style-type: none;
   }
-  #header .allnav .md-navbar .left .hamburgermenu .menu .accordion-body li a {
+  .allnav .md-navbar .left .hamburgermenu .menu .accordion-body li a {
     text-decoration: none;
     color: black;
   }
-  #header .allnav .md-navbar .left .hamburgermenu .showMenu {
+  .allnav .md-navbar .left .hamburgermenu .showMenu {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  #header .slider .firstitem .content img {
+  .slider .firstitem .content img {
     width: 100%;
     height: 40vh;
   }
-  #header .slider .firstitem .content .about {
+  .slider .firstitem .content .about {
     position: absolute;
     top: 8%;
     right: 8%;
   }
-  #header .slider .seconditem .content img {
+  .slider .seconditem .content img {
     width: 100%;
     height: 40vh;
   }
-  #header .slider .seconditem .content .about {
+  .slider .seconditem .content .about {
     position: absolute;
     top: 8%;
     left: 9%;
   }
-  #header .slider .firstitem,
-  #header .slider .seconditem {
+  .slider .firstitem,
+  .slider .seconditem {
     overflow: hidden;
   }
-  #header .slider .firstitem .content,
-  #header .slider .seconditem .content {
+  .slider .firstitem .content,
+  .slider .seconditem .content {
     position: relative;
   }
-  #header .slider .firstitem .content .about,
-  #header .slider .seconditem .content .about {
+  .slider .firstitem .content .about,
+  .slider .seconditem .content .about {
     width: 40%;
     color: white;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
   }
-  #header .slider .firstitem .content .about :first-child,
-  #header .slider .seconditem .content .about :first-child {
+  .slider .firstitem .content .about :first-child,
+  .slider .seconditem .content .about :first-child {
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 10px;
   }
-  #header .slider .firstitem .content .about :nth-child(2),
-  #header .slider .seconditem .content .about :nth-child(2) {
+  .slider .firstitem .content .about :nth-child(2),
+  .slider .seconditem .content .about :nth-child(2) {
     font-size: 38px;
     line-height: 44px;
     margin-bottom: 15px;
@@ -311,16 +311,16 @@
     margin-top: 10px;
     padding-bottom: 10px;
   }
-  #header .slider .firstitem .content .about :nth-child(3),
-  #header .slider .seconditem .content .about :nth-child(3) {
+  .slider .firstitem .content .about :nth-child(3),
+  .slider .seconditem .content .about :nth-child(3) {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 30px;
     letter-spacing: 0.5px;
     font-weight: 400;
   }
-  #header .slider .firstitem .content .about :nth-child(4),
-  #header .slider .seconditem .content .about :nth-child(4) {
+  .slider .firstitem .content .about :nth-child(4),
+  .slider .seconditem .content .about :nth-child(4) {
     font-size: 15px;
     font-weight: 400;
     padding: 10px 33px;
@@ -331,8 +331,8 @@
     -webkit-transition: 1s;
     transition: 1s;
   }
-  #header .slider .firstitem .content .about :nth-child(4):hover,
-  #header .slider .seconditem .content .about :nth-child(4):hover {
+  .slider .firstitem .content .about :nth-child(4):hover,
+  .slider .seconditem .content .about :nth-child(4):hover {
     background-color: black;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -369,104 +369,204 @@ main #services p {
   color: gray;
 }
 
-main #AllAboutFabulous {
-  height: 80vh;
+@media screen and (min-width: 992px) {
+  main #AllAboutFabulous {
+    height: 85vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main #AllAboutFabulous .image {
+    height: 75vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #AllAboutFabulous .content .subtitle p {
+    font-size: 16px;
+    letter-spacing: 8px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-family: "Poppins", sans-serif;
+    color: #ea4441;
+  }
+  main #AllAboutFabulous .content .title h6 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #232323;
+    font-family: "Poppins", sans-serif;
+    text-transform: unset;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+  }
+  main #AllAboutFabulous .content .line {
+    width: 80px;
+    height: 4px;
+    background: #eb4d4b;
+  }
+  main #AllAboutFabulous .content .description {
+    width: 83%;
+    margin-bottom: 25px;
+    font-weight: 400;
+    color: #787878;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    margin-top: 34px;
+  }
+  main #AllAboutFabulous .content ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 0px;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main #AllAboutFabulous .content ul li {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #666;
+    line-height: 32px;
+  }
+  main #AllAboutFabulous .content ul li::before {
+    content: "•";
+    color: red;
+    font-size: 30px;
+    margin-right: 14px;
+  }
+  main #AllAboutFabulous .content button {
+    padding: 10px 29px 10px 29px;
+    background-color: #eb4d4b;
+    border-radius: 30px;
+    border: none;
+  }
+  main #AllAboutFabulous .content button:hover {
+    background-color: black;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
 }
 
-main #AllAboutFabulous .image {
-  height: 75vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main #AllAboutFabulous .content .subtitle p {
-  font-size: 16px;
-  letter-spacing: 8px;
-  font-weight: 500;
-  margin-bottom: 12px;
-  font-family: "Poppins", sans-serif;
-  color: #ea4441;
-}
-
-main #AllAboutFabulous .content .title h6 {
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 600;
-  color: #232323;
-  font-family: "Poppins", sans-serif;
-  text-transform: unset;
-  position: relative;
-  display: inline-block;
-  margin-bottom: 25px;
-  padding-bottom: 5px;
-}
-
-main #AllAboutFabulous .content .line {
-  width: 80px;
-  height: 4px;
-  background: #eb4d4b;
-}
-
-main #AllAboutFabulous .content .description {
-  width: 83%;
-  margin-bottom: 25px;
-  font-weight: 400;
-  color: #787878;
-  letter-spacing: 0.5px;
-  line-height: 24px;
-  margin-top: 34px;
-}
-
-main #AllAboutFabulous .content ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-left: 0px;
-  list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main #AllAboutFabulous .content ul li {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #666;
-  line-height: 32px;
-}
-
-main #AllAboutFabulous .content ul li::before {
-  content: "•";
-  color: red;
-  font-size: 30px;
-  margin-right: 14px;
-}
-
-main #AllAboutFabulous .content button {
-  padding: 10px 29px;
-  background-color: #eb4d4b;
-  border-radius: 30px;
-  border: none;
-}
-
-main #AllAboutFabulous .content button:hover {
-  background-color: black;
-  -webkit-transition: 1s;
-  transition: 1s;
+@media only screen and (max-width: 992px) and (min-width: 767px) {
+  main #AllAboutFabulous {
+    height: 85vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main #AllAboutFabulous .image {
+    height: 44vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #AllAboutFabulous .content {
+    text-align: center;
+  }
+  main #AllAboutFabulous .content .subtitle p {
+    font-size: 16px;
+    letter-spacing: 6px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-family: "Poppins", sans-serif;
+    color: #ea4441;
+  }
+  main #AllAboutFabulous .content .title h6 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #232323;
+    font-family: "Poppins", sans-serif;
+    text-transform: unset;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+  }
+  main #AllAboutFabulous .content .line {
+    width: 80px;
+    height: 4px;
+    background: #eb4d4b;
+    margin: 0 auto;
+  }
+  main #AllAboutFabulous .content .description {
+    width: 83%;
+    margin-bottom: 25px;
+    font-weight: 400;
+    color: #787878;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    margin-top: 34px;
+  }
+  main #AllAboutFabulous .content ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 0px;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main #AllAboutFabulous .content ul li {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #666;
+    line-height: 32px;
+  }
+  main #AllAboutFabulous .content ul li::before {
+    content: "•";
+    color: red;
+    font-size: 30px;
+    margin-right: 14px;
+  }
+  main #AllAboutFabulous .content button {
+    padding: 10px 29px 10px 29px;
+    background-color: #eb4d4b;
+    border-radius: 30px;
+    border: none;
+  }
+  main #AllAboutFabulous .content button:hover {
+    background-color: black;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
 }
 
 main #CustomerReview {

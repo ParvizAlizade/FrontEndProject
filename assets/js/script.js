@@ -111,15 +111,12 @@ $(document).ready(function () {
         margin:10,
         responsiveClass:true,
         responsive:{
-            0:{
+           
+            767:{
                 items:1,
-                nav:true
-            },
-            600:{
-                items:3,
                 nav:false
             },
-            1000:{
+            992:{
                 items:2,
                 nav:true,
                 loop:false,
