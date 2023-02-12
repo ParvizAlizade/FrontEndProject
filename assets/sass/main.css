@@ -745,6 +745,7 @@ main #Sponsors .sponsor-images img:hover {
 
 main #ContactAndSubscribe {
   background-color: #f2f6f9;
+  padding-bottom: 30px;
 }
 
 main #ContactAndSubscribe .contact {
@@ -878,5 +879,107 @@ main #ContactAndSubscribe .Subscribe .icons i:hover {
           transform: rotateY(360deg);
   -webkit-transition: 1.5s;
   transition: 1.5s;
+}
+
+main #ContactAndSubscribe .md-links .accordion-item {
+  background-color: transparent;
+  border: none;
+}
+
+main #ContactAndSubscribe .md-links .accordion-item .accordion-button {
+  background-color: transparent;
+  border: transparent;
+  color: black;
+}
+
+main #ContactAndSubscribe .md-links .accordion-item .accordion-button:focus {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: black;
+}
+
+main #ContactAndSubscribe .md-links .accordion-item .accordion-body {
+  padding: 0px;
+}
+
+main #ContactAndSubscribe .md-links .accordion-item .accordion-body ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+main #ContactAndSubscribe .md-links .accordion-item .accordion-body ul li a {
+  text-decoration: none;
+  color: gray;
+}
+
+main #ContactAndSubscribe .lg-links {
+  margin-top: 30px;
+}
+
+main #ContactAndSubscribe .lg-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
+}
+
+main #ContactAndSubscribe .lg-links ul li {
+  list-style: none;
+  width: 20%;
+  margin-bottom: 10px;
+}
+
+main #ContactAndSubscribe .lg-links ul li a {
+  text-decoration: none;
+  text-align: center;
+  color: #636363;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main #ContactAndSubscribe .lg-links ul li a:hover {
+  color: red;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+footer {
+  padding: 20px;
+  background-color: black;
+}
+
+footer .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .text h6 {
+  margin-left: 30px;
+}
+
+footer .credit-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+footer .credit-cards img {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */

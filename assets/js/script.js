@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     $(".drone-item").mouseover(function(){
         $(".onhoverdrone").addClass('active');
