@@ -41,5 +41,37 @@ $(document).ready(function () {
       }
     )
 
+
+    var $gridCont = $('.grid-container');
+   
+    function gridList(e) {
+      var $gridCont = $('.grid-container')
+      $(".card-body .about").addClass("d-none");
+      $(".card-body").addClass("text-center");
+      $(".card-body .button").removeClass("list-button");
+      
+      e.preventDefault();
+      $gridCont.removeClass('list-view');
+      $(".card-body .about").addClass("d-none");
+    }
+
+    function showList(e) {
+      $(".card-body .button").addClass("list-button");
+      e.preventDefault();
+      if ($gridCont.hasClass('list-view')) {
+      }
+      else{
+        $gridCont.addClass('list-view');
+        $(".card-body .about").removeClass("d-none");
+        $(".card-body").removeClass("text-center");
+      }
+    }
+    
+    $(document).on('click', '.grid-icon', gridList);
+    $(document).on('click', '.list-icon', showList);
+
+
+    
+
     
     });

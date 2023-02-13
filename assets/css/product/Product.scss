@@ -334,7 +334,8 @@ height: 400vh;
       
     }
     .right-column{
-      .top{
+      
+      .top,.bottom{
         background-color: rgba(220, 220, 220, 0.418);
         padding: 20px;
         .left{
@@ -343,6 +344,13 @@ height: 400vh;
             font-size: 20px;
             color: rgba(128, 128, 128, 0.41);
           }
+
+          .grid-icon,.list-icon{
+            transition: 0.6s;
+            &:hover{
+              color: black;
+            }
+          }
           span{
             margin-left: 10px;
             font-size: 17px;
@@ -350,8 +358,7 @@ height: 400vh;
         }
 
         .right{
-          width: 50%;
-          justify-content: space-between;
+          justify-content: space-around;
           display: flex;
           :nth-child(2){
             border: none;
@@ -360,9 +367,146 @@ height: 400vh;
             padding-right: 40px;
             border: none;
           }
-          
+        }
+      } 
 
+
+      .list-view {
+        .row {
+          > [class*='col-'] {
+            flex: 0 0 100%;
+          }
+        }
+        .card {
+          flex-direction: row;
+          .card-body {
+            display: inline-block;
+            width: 80%;
+          }
+        }
+      }
+      .grid-container{
+        height: 300vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        &::-webkit-scrollbar{
+          display: none;
+        }
+        .card{
+          border: none;
+          margin-top: 40px;
+          padding-left: 5px;
+          position: relative;
+          padding-right: 5px;
+          .star-icon{
+            position: absolute;
+            bottom: 33%;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          .images{
+            position: relative;
+            overflow: hidden;
+            :nth-child(1){
+              visibility: visible;
+            }
+            :nth-child(2){
+             display: none;
+            }
+            i{
+              font-size: 15px;
+              border: 1px solid rgb(142, 142, 142);
+              box-shadow: 1px 1px 5px;
+              padding: 10px;
+              border-radius: 50%;
+              background-color: white;
+              position: absolute;
+              transition: 0.8s;
+            }
+            .eye{
+              top: 10px;
+              right: -55px;
+            }
+            .heart{
+              top: 55px;
+              right: -75px;
+            }
+            .statistic{
+              top: 100px;
+              right: -95px;
+            }
+          }
+          .card-body{
            
+            position: relative;
+            overflow: hidden;
+            .card-title{
+              margin-bottom: 10px;
+            }
+            .card-text{
+              font-size: 17px;
+              color: red;
+              font-weight: 500;
+              margin-bottom: 20px;
+            }
+            .button{
+              position: absolute;
+              bottom: -40px;
+              left: 50%;
+              transform: translate(-50%, 0);
+               color: white;
+            }
+
+             .list-button{
+              position: absolute;
+              bottom: 0px;
+              left:15%;
+              transform: translate(-50%, 0);
+              transition: 0s;
+            }
+          }
+        }
+        .card:hover{
+          .button{
+            bottom: 0px;
+            transition: 0.6s;
+          }
+          .images{
+            :nth-child(1){
+              opacity: 0;
+              transition: 1s;
+              display: none;
+            }
+            :nth-child(2){
+              display: block;
+              opacity: 1;
+              transition: 1s;
+            }
+          }
+          i{
+            transition: 0.8s;
+            right: 8px;
+            &:hover{
+              background-color: red;
+              color: white;
+            }
+          }
+          .eye{
+            top: 10px;
+            right: 10px;
+          }
+          .heart{
+            top: 55px;
+            right: 10px;
+          }
+          .statistic{
+            top: 100px;
+            right: 10px;
+          }
+          .button:hover{
+            background-color: black;
+            border: none;
+          }
         }
       }
     }
