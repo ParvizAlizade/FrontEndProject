@@ -6,9 +6,16 @@
 #header {
   @media screen and (min-width: 992px) {
     #allheader {
+      
       .topheader {
+        .fixed-header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%; 
+      }
+      position: absolute;
         padding-top: 20px;
-        position: absolute;
         z-index: 2;
         width: 100%;
         .container {
@@ -182,148 +189,152 @@
       }
     }
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .allnav {
-    .md-navbar {
-      height: 6vh;
-      align-items: center;
-      display: flex;
-      i {
-        font-size: 18px;
-      }
-      .left {
-        .hamburgermenu {
-          .menuItem {
-            display: block;
-            font-size: 20px;
-            color: rgb(59, 59, 59);
-            text-decoration: none;
-          }
-
-          .hamburger {
-            z-index: 100;
-            border: none;
-            background: white;
-            cursor: pointer;
-          }
-
-          .xmark {
-            display: none;
-          }
-
-          .menu {
-            transform: translateX(-100%);
-            transition: transform 0.5s;
-            top: 0;
-            left: 0;
-            right: 0;
-            width: 40%;
-            bottom: 0;
-            z-index: 99;
-            background: white;
-            color: white;
-            list-style: none;
-            position: fixed;
-            padding-top: 4rem;
-            .accordion-item {
-              border: none;
+  
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .allnav {
+      .md-navbar {
+        height: 6vh;
+        align-items: center;
+        display: flex;
+        i {
+          font-size: 18px;
+        }
+        .left {
+          .hamburgermenu {
+            .menuItem {
+              display: block;
+              font-size: 20px;
+              color: rgb(59, 59, 59);
+              text-decoration: none;
             }
-            .accordion-body {
-              li {
-                list-style-type: none;
-                a {
-                  text-decoration: none;
-                  color: black;
+  
+            .hamburger {
+              z-index: 100;
+              border: none;
+              background: white;
+              cursor: pointer;
+            }
+  
+            .xmark {
+              display: none;
+              justify-content: flex-end;
+              }
+  
+            .menu {
+              transform: translateX(-100%);
+              transition: transform 0.7s;
+              top: 0;
+              left: 0;
+              right: 0;
+              width: 40%;
+              bottom: 0;
+              z-index: 99;
+              background: white;
+              color: white;
+              list-style: none;
+              position: fixed;
+              padding-top: 4rem;
+              height: 100vh;
+              .accordion-item {
+                border: none;
+              }
+              .accordion-body {
+                li {
+                  list-style-type: none;
+                  a {
+                    text-decoration: none;
+                    color: black;
+                  }
                 }
               }
             }
-          }
-          .showMenu {
-            transform: translateY(0);
+            .showMenu {
+              transform: translateY(0);
+            }
           }
         }
       }
     }
-  }
-
-  .slider {
-    .firstitem {
-      .content {
-        img {
-          width: 100%;
-          height: 40vh;
-        }
-        .about {
-          position: absolute;
-          top: 8%;
-          right: 8%;
-        }
-      }
-    }
-    .seconditem {
-      .content {
-        img {
-          width: 100%;
-          height: 40vh;
-        }
-        .about {
-          position: absolute;
-          top: 8%;
-          left: 9%;
+  
+    .slider {
+      .firstitem {
+        .content {
+          img {
+            width: 100%;
+            height: 40vh;
+          }
+          .about {
+            position: absolute;
+            top: 8%;
+            right: 8%;
+          }
         }
       }
-    }
-    .firstitem,
-    .seconditem {
-      overflow: hidden;
-      .content {
-        position: relative;
-        .about {
-          width: 40%;
-          color: white;
-          box-sizing: content-box;
-          :first-child {
-            font-size: 20px;
-            line-height: 22px;
-            margin-bottom: 10px;
+      .seconditem {
+        .content {
+          img {
+            width: 100%;
+            height: 40vh;
           }
-          :nth-child(2) {
-            font-size: 38px;
-            line-height: 44px;
-            margin-bottom: 15px;
-            font-weight: 600;
-            letter-spacing: 0.7px;
-            margin-top: 10px;
-            padding-bottom: 10px;
+          .about {
+            position: absolute;
+            top: 8%;
+            left: 9%;
           }
-          :nth-child(3) {
-            font-size: 14px;
-            line-height: 20px;
-            margin-bottom: 30px;
-            letter-spacing: 0.5px;
-            font-weight: 400;
-          }
-          :nth-child(4) {
-            font-size: 15px;
-            font-weight: 400;
-            padding: 10px 33px;
-            border-radius: 30px;
-            color: #fff;
-            border: none;
-            background-color: red;
-            transition: 1s;
-          }
-          :nth-child(4):hover {
-            background-color: black;
-            transition: 0.5s;
+        }
+      }
+      .firstitem,
+      .seconditem {
+        overflow: hidden;
+        .content {
+          position: relative;
+          .about {
+            width: 40%;
+            color: white;
+            box-sizing: content-box;
+            :first-child {
+              font-size: 20px;
+              line-height: 22px;
+              margin-bottom: 10px;
+            }
+            :nth-child(2) {
+              font-size: 38px;
+              line-height: 44px;
+              margin-bottom: 15px;
+              font-weight: 600;
+              letter-spacing: 0.7px;
+              margin-top: 10px;
+              padding-bottom: 10px;
+            }
+            :nth-child(3) {
+              font-size: 14px;
+              line-height: 20px;
+              margin-bottom: 30px;
+              letter-spacing: 0.5px;
+              font-weight: 400;
+            }
+            :nth-child(4) {
+              font-size: 15px;
+              font-weight: 400;
+              padding: 10px 33px;
+              border-radius: 30px;
+              color: #fff;
+              border: none;
+              background-color: red;
+              transition: 1s;
+            }
+            :nth-child(4):hover {
+              background-color: black;
+              transition: 0.5s;
+            }
           }
         }
       }
     }
   }
 }
+
+
 main {
   #services {
     img {

@@ -8,9 +8,15 @@
 
 @media screen and (min-width: 992px) {
   #header #allheader .topheader {
-    padding-top: 20px;
     position: absolute;
+    padding-top: 20px;
     z-index: 2;
+    width: 100%;
+  }
+  #header #allheader .topheader .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
   }
   #header #allheader .topheader .container {
@@ -205,7 +211,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .allnav .md-navbar {
+  #header .allnav .md-navbar {
     height: 6vh;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -214,31 +220,34 @@
     display: -ms-flexbox;
     display: flex;
   }
-  .allnav .md-navbar i {
+  #header .allnav .md-navbar i {
     font-size: 18px;
   }
-  .allnav .md-navbar .left .hamburgermenu .menuItem {
+  #header .allnav .md-navbar .left .hamburgermenu .menuItem {
     display: block;
     font-size: 20px;
     color: #3b3b3b;
     text-decoration: none;
   }
-  .allnav .md-navbar .left .hamburgermenu .hamburger {
+  #header .allnav .md-navbar .left .hamburgermenu .hamburger {
     z-index: 100;
     border: none;
     background: white;
     cursor: pointer;
   }
-  .allnav .md-navbar .left .hamburgermenu .xmark {
+  #header .allnav .md-navbar .left .hamburgermenu .xmark {
     display: none;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
-  .allnav .md-navbar .left .hamburgermenu .menu {
+  #header .allnav .md-navbar .left .hamburgermenu .menu {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: -webkit-transform 0.7s;
+    transition: transform 0.7s;
+    transition: transform 0.7s, -webkit-transform 0.7s;
     top: 0;
     left: 0;
     right: 0;
@@ -250,62 +259,63 @@
     list-style: none;
     position: fixed;
     padding-top: 4rem;
+    height: 100vh;
   }
-  .allnav .md-navbar .left .hamburgermenu .menu .accordion-item {
+  #header .allnav .md-navbar .left .hamburgermenu .menu .accordion-item {
     border: none;
   }
-  .allnav .md-navbar .left .hamburgermenu .menu .accordion-body li {
+  #header .allnav .md-navbar .left .hamburgermenu .menu .accordion-body li {
     list-style-type: none;
   }
-  .allnav .md-navbar .left .hamburgermenu .menu .accordion-body li a {
+  #header .allnav .md-navbar .left .hamburgermenu .menu .accordion-body li a {
     text-decoration: none;
     color: black;
   }
-  .allnav .md-navbar .left .hamburgermenu .showMenu {
+  #header .allnav .md-navbar .left .hamburgermenu .showMenu {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  .slider .firstitem .content img {
+  #header .slider .firstitem .content img {
     width: 100%;
     height: 40vh;
   }
-  .slider .firstitem .content .about {
+  #header .slider .firstitem .content .about {
     position: absolute;
     top: 8%;
     right: 8%;
   }
-  .slider .seconditem .content img {
+  #header .slider .seconditem .content img {
     width: 100%;
     height: 40vh;
   }
-  .slider .seconditem .content .about {
+  #header .slider .seconditem .content .about {
     position: absolute;
     top: 8%;
     left: 9%;
   }
-  .slider .firstitem,
-  .slider .seconditem {
+  #header .slider .firstitem,
+  #header .slider .seconditem {
     overflow: hidden;
   }
-  .slider .firstitem .content,
-  .slider .seconditem .content {
+  #header .slider .firstitem .content,
+  #header .slider .seconditem .content {
     position: relative;
   }
-  .slider .firstitem .content .about,
-  .slider .seconditem .content .about {
+  #header .slider .firstitem .content .about,
+  #header .slider .seconditem .content .about {
     width: 40%;
     color: white;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
   }
-  .slider .firstitem .content .about :first-child,
-  .slider .seconditem .content .about :first-child {
+  #header .slider .firstitem .content .about :first-child,
+  #header .slider .seconditem .content .about :first-child {
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 10px;
   }
-  .slider .firstitem .content .about :nth-child(2),
-  .slider .seconditem .content .about :nth-child(2) {
+  #header .slider .firstitem .content .about :nth-child(2),
+  #header .slider .seconditem .content .about :nth-child(2) {
     font-size: 38px;
     line-height: 44px;
     margin-bottom: 15px;
@@ -314,16 +324,16 @@
     margin-top: 10px;
     padding-bottom: 10px;
   }
-  .slider .firstitem .content .about :nth-child(3),
-  .slider .seconditem .content .about :nth-child(3) {
+  #header .slider .firstitem .content .about :nth-child(3),
+  #header .slider .seconditem .content .about :nth-child(3) {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 30px;
     letter-spacing: 0.5px;
     font-weight: 400;
   }
-  .slider .firstitem .content .about :nth-child(4),
-  .slider .seconditem .content .about :nth-child(4) {
+  #header .slider .firstitem .content .about :nth-child(4),
+  #header .slider .seconditem .content .about :nth-child(4) {
     font-size: 15px;
     font-weight: 400;
     padding: 10px 33px;
@@ -334,8 +344,8 @@
     -webkit-transition: 1s;
     transition: 1s;
   }
-  .slider .firstitem .content .about :nth-child(4):hover,
-  .slider .seconditem .content .about :nth-child(4):hover {
+  #header .slider .firstitem .content .about :nth-child(4):hover,
+  #header .slider .seconditem .content .about :nth-child(4):hover {
     background-color: black;
     -webkit-transition: 0.5s;
     transition: 0.5s;

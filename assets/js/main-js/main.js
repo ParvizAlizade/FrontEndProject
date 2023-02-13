@@ -14,6 +14,15 @@ $(document).ready(function () {
         $(".onhoveraccesories").removeClass('active');
       });    
 
+      window.onscroll = function() {myFunction()};
+
+      var header = document.getElementsByClassName("topheader");
+      function myFunction() {
+        header.classList.remove("absolute")
+        header.classList.add("sticky");
+      }
+      
+
       $('.slider').slick({
         infinite: true,
         slidesToShow: 1,
