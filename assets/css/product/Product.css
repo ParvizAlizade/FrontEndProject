@@ -276,6 +276,11 @@ main #breadcumb ul li a:hover {
   transition: .3s;
 }
 
+main #products a {
+  text-decoration: none;
+  color: black;
+}
+
 main #products .container .left-column .categories, main #products .container .left-column .search {
   border: 1px solid #a4a4a4;
   -webkit-box-shadow: 1px 1px 2px;
@@ -359,5 +364,281 @@ main #products .container .left-column .bestsellers .product .desc span del, mai
   color: #aaaaaa;
   font-weight: 500;
   margin-left: 5px;
+}
+
+main #products .container .right-column .top {
+  background-color: rgba(220, 220, 220, 0.418);
+  padding: 20px;
+}
+
+main #products .container .right-column .top .left i {
+  margin-left: 10px;
+  font-size: 20px;
+  color: rgba(128, 128, 128, 0.41);
+}
+
+main #products .container .right-column .top .left span {
+  margin-left: 10px;
+  font-size: 17px;
+}
+
+main #products .container .right-column .top .right {
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #products .container .right-column .top .right :nth-child(2) {
+  border: none;
+}
+
+main #products .container .right-column .top .right :nth-child(4) {
+  padding-right: 40px;
+  border: none;
+}
+
+main #ContactAndSubscribe {
+  margin-top: 40px;
+  background-color: #f2f6f9;
+  padding-bottom: 30px;
+}
+
+main #ContactAndSubscribe .contact {
+  border: 1px solid #c9c9c9;
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+main #ContactAndSubscribe .contact .text-center {
+  text-align: center;
+}
+
+main #ContactAndSubscribe .contact .text-center .subtitle p {
+  font-size: 19px;
+  letter-spacing: 8px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #eb4d4b;
+}
+
+main #ContactAndSubscribe .contact .text-center .title h1 {
+  font-size: 40px;
+  margin-bottom: 14px;
+}
+
+main #ContactAndSubscribe .contact .text-center .line {
+  width: 80px;
+  height: 4px;
+  background: #eb4d4b;
+  margin: 0 auto;
+}
+
+main #ContactAndSubscribe .contact .inputs {
+  margin-top: 10px;
+}
+
+main #ContactAndSubscribe .contact .inputs input,
+main #ContactAndSubscribe .contact .inputs textarea {
+  padding: 14px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+main #ContactAndSubscribe .contact .inputs button {
+  border-radius: 40px;
+  padding: 10px;
+  margin: 15px auto;
+}
+
+main #ContactAndSubscribe .Subscribe {
+  border: 1px solid #c9c9c9;
+  padding: 25px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+main #ContactAndSubscribe .Subscribe .text-center {
+  text-align: center;
+}
+
+main #ContactAndSubscribe .Subscribe .text-center .subtitle p {
+  font-size: 19px;
+  letter-spacing: 8px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #eb4d4b;
+}
+
+main #ContactAndSubscribe .Subscribe .text-center .title h1 {
+  font-size: 40px;
+  margin-bottom: 14px;
+}
+
+main #ContactAndSubscribe .Subscribe .text-center .line {
+  width: 80px;
+  height: 4px;
+  background: #eb4d4b;
+  margin: 0 auto;
+}
+
+main #ContactAndSubscribe .Subscribe .titleandcontent i {
+  font-size: 45px;
+  color: red;
+  margin: 20px auto;
+}
+
+main #ContactAndSubscribe .Subscribe .input {
+  width: 70%;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+main #ContactAndSubscribe .Subscribe .inputfocus {
+  outline: blue;
+}
+
+main #ContactAndSubscribe .Subscribe .input input {
+  position: relative;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+main #ContactAndSubscribe .Subscribe .input button {
+  position: absolute;
+  border-radius: 40px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  right: 0px;
+  z-index: 3;
+}
+
+main #ContactAndSubscribe .Subscribe .icons {
+  margin-top: 30px;
+  padding-bottom: 27px;
+}
+
+main #ContactAndSubscribe .Subscribe .icons i {
+  margin-right: 5px;
+  font-size: 35px;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+main #ContactAndSubscribe .Subscribe .icons i:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+main #ContactAndSubscribe .md-links .accordion-item {
+  background-color: transparent;
+  border: none;
+}
+
+main #ContactAndSubscribe .md-links .accordion-item .accordion-button {
+  background-color: transparent;
+  border: transparent;
+  color: black;
+}
+
+main #ContactAndSubscribe .md-links .accordion-item .accordion-button:focus {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: black;
+}
+
+main #ContactAndSubscribe .md-links .accordion-item .accordion-body {
+  padding: 0px;
+}
+
+main #ContactAndSubscribe .md-links .accordion-item .accordion-body ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+main #ContactAndSubscribe .md-links .accordion-item .accordion-body ul li a {
+  text-decoration: none;
+  color: gray;
+}
+
+main #ContactAndSubscribe .lg-links {
+  margin-top: 30px;
+}
+
+main #ContactAndSubscribe .lg-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
+}
+
+main #ContactAndSubscribe .lg-links ul li {
+  list-style: none;
+  width: 20%;
+  margin-bottom: 10px;
+}
+
+main #ContactAndSubscribe .lg-links ul li a {
+  text-decoration: none;
+  text-align: center;
+  color: #636363;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main #ContactAndSubscribe .lg-links ul li a:hover {
+  color: red;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+footer {
+  padding: 20px;
+  background-color: black;
+}
+
+footer .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .text h6 {
+  margin-left: 30px;
+}
+
+footer .credit-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+footer .credit-cards img {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=Product.css.map */
