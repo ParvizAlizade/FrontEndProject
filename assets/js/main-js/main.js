@@ -14,39 +14,34 @@ $(document).ready(function () {
         $(".onhoveraccesories").removeClass('active');
       });    
 
-      window.onscroll = function() {myFunction()};
-
-      var header = document.getElementsByClassName("topheader");
-      function myFunction() {
-        header.classList.remove("absolute")
-        header.classList.add("sticky");
-      }
       
-
+      
+      
       $('.slider').slick({
         infinite: true,
         slidesToShow: 1,
         dots:true,
         arrows:true,
         autoplay:true,
-        autoplaySpeed:3800,
+        autoplaySpeed:2500,
         pauseOnHover:false,
         responsive: [
           {
             breakpoint: 768.1,
             settings: {
-             infinite: true,
-             slidesToShow: 1,
-             slidesToScroll: 1,
-             dots:true,
-             infinite:true,
-             arrows:false,
-             autoplay: true,
-             autoplaySpeed: 2000,
+              infinite: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots:true,
+              infinite:true,
+              arrows:false,
+              autoplay: true,
+              autoplaySpeed: 2000,
             }
           },
         ]
-      });;
+      });;    
+
 
 
       $('.sponsor-images').slick({

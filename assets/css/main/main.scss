@@ -530,6 +530,9 @@ main {
     text-align: center;
     display: flex;
     align-items: center;
+    .owl-dot{
+    color: red;
+    }
     .subtitle {
       p {
         font-size: 16px;
