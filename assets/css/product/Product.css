@@ -389,6 +389,14 @@ main #products .container .right-column .top .left .grid-icon:hover, main #produ
 main #products .container .right-column .top .left span, main #products .container .right-column .bottom .left span {
   margin-left: 10px;
   font-size: 17px;
+  -webkit-transition: 0.7;
+  transition: 0.7;
+}
+
+main #products .container .right-column .top .left span:hover, main #products .container .right-column .bottom .left span:hover {
+  color: red;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 main #products .container .right-column .top .right, main #products .container .right-column .bottom .right {

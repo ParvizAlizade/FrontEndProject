@@ -49,6 +49,9 @@ $(document).ready(function () {
       $(".card-body .about").addClass("d-none");
       $(".card-body").addClass("text-center");
       $(".card-body .button").removeClass("list-button");
+      $(".star-icon").removeClass("d-none");
+      $(".star-icon").addClass("d-block");
+
       
       e.preventDefault();
       $gridCont.removeClass('list-view');
@@ -57,6 +60,10 @@ $(document).ready(function () {
 
     function showList(e) {
       $(".card-body .button").addClass("list-button");
+      $(".star-icon").removeClass("d-block");
+      $(".star-icon").addClass("d-none");
+
+
       e.preventDefault();
       if ($gridCont.hasClass('list-view')) {
       }
