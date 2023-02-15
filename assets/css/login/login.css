@@ -1,42 +1,34 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #header .offer {
   background-color: black;
 }
-
 #header .offer .all {
   height: 7vh;
 }
-
 #header .offer .all ul {
   margin-top: 15px;
 }
-
 #header .offer .all ul li {
   list-style: none;
   margin-left: 20px;
   color: white;
 }
-
 #header .offer .all ul li span {
   font-size: 14px;
   font-weight: bold;
 }
-
 #header .offer .all ul li a {
   text-decoration: none;
 }
-
 #header .offer .all ul li a i {
   border-right: 1px solid black;
   padding-right: 10px;
 }
-
 @media screen and (min-width: 992px) {
   #header #allheader .topheader {
     padding-top: 20px;
@@ -49,36 +41,21 @@
     padding-right: 15px;
   }
   #header #allheader .topheader .container .row .allnav .lg-navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   #header #allheader .topheader .container .row .allnav .lg-navbar .navbar-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   #header #allheader .topheader .container .row .allnav .lg-navbar .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #header #allheader .topheader .container .row .allnav .lg-navbar .menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     height: 40px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+    align-items: end;
   }
   #header #allheader .topheader .container .row .allnav .lg-navbar .menu ul li {
     list-style-type: none;
@@ -91,27 +68,20 @@
   }
   #header #allheader .topheader .container .row .allnav .lg-navbar .menu ul li a:hover {
     color: red !important;
-    -webkit-transition: 0.4s;
     transition: 0.4s;
   }
   #header #allheader .topheader .container .row .allnav .lg-navbar .icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   #header #allheader .topheader .container .row .allnav .lg-navbar .icons i {
     font-size: 17px;
     margin-right: 20px;
     color: black;
-    -webkit-transition: 0.6s;
     transition: 0.6s;
   }
   #header #allheader .topheader .container .row .allnav .lg-navbar .icons i:hover {
     color: red;
-    -webkit-transition: 0.6s;
     transition: 0.6s;
   }
   #header .onhoveraccesories {
@@ -126,15 +96,12 @@
   }
   #header .onhoverdrone,
   #header .onhoveraccesories {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    border: 1px solid #acacac;
+    justify-content: space-around;
+    border: 1px solid rgb(172, 172, 172);
     padding: 20px 10px 10px 10px;
     visibility: hidden;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
   }
   #header .onhoverdrone.active,
   #header .onhoveraccesories.active {
@@ -147,7 +114,7 @@
   }
   #header .onhoverdrone .title h6 a,
   #header .onhoveraccesories .title h6 a {
-    color: gray;
+    color: rgb(128, 128, 128);
     text-decoration: none;
     font-size: 17px;
   }
@@ -158,19 +125,14 @@
   }
   #header .onhoverdrone p a,
   #header .onhoveraccesories p a {
-    color: #343434;
+    color: rgb(52, 52, 52);
     text-decoration: none;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 992px) {
   #header .allnav .md-navbar {
     height: 6vh;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    align-items: center;
     display: flex;
   }
   #header .allnav .md-navbar i {
@@ -179,7 +141,7 @@
   #header .allnav .md-navbar .left .hamburgermenu .menuItem {
     display: block;
     font-size: 20px;
-    color: #3b3b3b;
+    color: rgb(59, 59, 59);
     text-decoration: none;
   }
   #header .allnav .md-navbar .left .hamburgermenu .hamburger {
@@ -190,17 +152,11 @@
   }
   #header .allnav .md-navbar .left .hamburgermenu .xmark {
     display: none;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   #header .allnav .md-navbar .left .hamburgermenu .menu {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    -webkit-transition: -webkit-transform 0.7s;
-    transition: -webkit-transform 0.7s;
+    transform: translateX(-100%);
     transition: transform 0.7s;
-    transition: transform 0.7s, -webkit-transform 0.7s;
     top: 0;
     left: 0;
     right: 0;
@@ -225,14 +181,13 @@
     color: black;
   }
   #header .allnav .md-navbar .left .hamburgermenu .showMenu {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @media screen and (min-width: 992px) {
   main #breadcumb {
-    background-color: #eeeeee;
+    background-color: rgb(238, 238, 238);
     height: 20vh;
   }
   main #breadcumb .left {
@@ -240,19 +195,11 @@
     background-image: url("https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/breadcrumb.png");
     background-attachment: fixed;
     background-position: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    align-items: center;
+    justify-content: end;
   }
   main #breadcumb ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   main #breadcumb ul li {
@@ -262,7 +209,6 @@
   main #breadcumb ul li a {
     text-decoration: none;
     color: black;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   main #breadcumb ul li a i {
@@ -272,35 +218,23 @@
   }
   main #breadcumb ul li a:hover {
     color: red;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
 }
-
 @media screen and (min-width: 767px) and (max-width: 992px) {
   main #breadcumb {
-    background-color: #eeeeee;
+    background-color: rgb(238, 238, 238);
     height: 10vh;
   }
   main #breadcumb .left {
     height: 10vh;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    align-items: center;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   main #breadcumb .left ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   main #breadcumb .left ul :nth-child(2) {
     border-right: 1px solid black;
@@ -313,7 +247,6 @@
   main #breadcumb .left ul li a {
     text-decoration: none;
     color: black;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   main #breadcumb .left ul li a i {
@@ -323,37 +256,30 @@
   }
   main #breadcumb .left ul li a:hover {
     color: red;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
 }
-
 main #products a {
   text-decoration: none;
   color: black;
 }
-
 main #products .container .left-column .categories,
 main #products .container .left-column .search {
-  border: 1px solid #a4a4a4;
-  -webkit-box-shadow: 1px 1px 2px;
-          box-shadow: 1px 1px 2px;
+  border: 1px solid rgb(164, 164, 164);
+  box-shadow: 1px 1px 2px;
   width: 70%;
   padding-bottom: 10px;
 }
-
 main #products .container .left-column .categories h6,
 main #products .container .left-column .search h6 {
   margin-left: 24px;
   margin-bottom: 15px;
 }
-
 main #products .container .left-column .categories button,
 main #products .container .left-column .search button {
   margin: 10px 0px;
   margin-left: 15px;
 }
-
 main #products .container .left-column .categories p,
 main #products .container .left-column .search p {
   padding: 8px;
@@ -361,7 +287,6 @@ main #products .container .left-column .search p {
   font-size: 20px;
   background-color: rgba(220, 220, 220, 0.378);
 }
-
 main #products .container .left-column .categories ul,
 main #products .container .left-column .search ul {
   list-style: none;
@@ -369,31 +294,25 @@ main #products .container .left-column .search ul {
   width: 100%;
   margin-left: 20px;
 }
-
 main #products .container .left-column .categories ul li,
 main #products .container .left-column .search ul li {
   margin-top: 10px;
 }
-
 main #products .container .left-column .search span {
   margin-left: 10px;
   color: gray;
 }
-
 main #products .container .left-column .bestsellers,
 main #products .container .left-column .latestproducts {
-  border: 1px solid #a4a4a4;
-  -webkit-box-shadow: 1px 1px 2px;
-          box-shadow: 1px 1px 2px;
+  border: 1px solid rgb(164, 164, 164);
+  box-shadow: 1px 1px 2px;
   width: 70%;
   padding-bottom: 50px;
 }
-
 main #products .container .left-column .bestsellers #firstproduct,
 main #products .container .left-column .latestproducts #firstproduct {
   margin-top: 0px;
 }
-
 main #products .container .left-column .bestsellers .title p,
 main #products .container .left-column .latestproducts .title p {
   padding: 8px;
@@ -401,232 +320,169 @@ main #products .container .left-column .latestproducts .title p {
   font-size: 20px;
   background-color: rgba(220, 220, 220, 0.378);
 }
-
 main #products .container .left-column .bestsellers .product,
 main #products .container .left-column .latestproducts .product {
   margin-top: 40px;
 }
-
 main #products .container .left-column .bestsellers .product img,
 main #products .container .left-column .latestproducts .product img {
   float: left;
   margin-left: 20px;
   margin-right: 10px;
 }
-
 main #products .container .left-column .bestsellers .product .desc p,
 main #products .container .left-column .latestproducts .product .desc p {
   margin-bottom: 5px;
 }
-
 main #products .container .left-column .bestsellers .product .desc span,
 main #products .container .left-column .latestproducts .product .desc span {
   color: red;
   font-weight: bold;
 }
-
 main #products .container .left-column .bestsellers .product .desc span del,
 main #products .container .left-column .latestproducts .product .desc span del {
-  color: #aaaaaa;
+  color: rgb(170, 170, 170);
   font-weight: 500;
   margin-left: 5px;
 }
-
 main #products .container .right-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 main #products .container .right-column .new-customer {
   width: 48%;
   padding: 20px;
-  border: 1px solid #c6c6c6;
-  height: -webkit-max-content;
+  border: 1px solid rgb(198, 198, 198);
   height: -moz-max-content;
   height: max-content;
 }
-
 main #products .container .right-column .new-customer span {
   display: block;
 }
-
 main #products .container .right-column .new-customer .button {
   padding: 7px 20px;
   margin-top: 16px;
   border-radius: 0px;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   border: none;
 }
-
 main #products .container .right-column .new-customer .button:hover {
   background-color: red;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   border: none;
 }
-
 main #products .container .right-column .returning-customer {
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 20px;
-  border: 1px solid #c6c6c6;
+  border: 1px solid rgb(198, 198, 198);
   width: 48%;
 }
-
 main #products .container .right-column .returning-customer input {
   margin-top: 5px;
 }
-
 main #products .container .right-column .returning-customer .button {
   padding: 7px 30px;
   margin-top: 16px;
   border-radius: 0px;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   border: none;
 }
-
 main #products .container .right-column .returning-customer .button:hover {
   background-color: red;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   border: none;
 }
-
 main #products .container .right-column form h5 {
   margin-top: 30px;
   margin-bottom: -5px;
 }
-
 main #products .container .right-column form .form-group {
   margin-top: 10px;
 }
-
 main #products .container .right-column form .form-group label p {
   font-weight: 600;
 }
-
 main #products .container .right-column form .form-group label i {
   color: red;
   font-size: 10px;
   margin-right: 5px;
 }
-
 main #products .container .right-column form .newsletter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 main #products .container .right-column form .newsletter :nth-child(1) {
   margin-left: 1px;
 }
-
 main #products .container .right-column form .newsletter label {
   margin-left: 5px;
 }
-
 main #products .container .right-column form .continue {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 40px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
 }
-
 main #products .container .right-column form .continue span {
   color: gray;
   margin-right: 10px;
   font-size: 17px;
 }
-
 main #products .container .right-column form .continue span a {
   font-weight: bold;
 }
-
 main #products .container .right-column form .continue span a:hover {
   color: red;
 }
-
 main #products .container .right-column form .continue .button {
   margin-left: 10px;
 }
-
 main #products .reklam-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 20px;
 }
-
 main #products .accordion .categories-accordion {
   margin-top: 30px;
 }
-
 main #products .accordion .categories-accordion .accordion-body ul {
   list-style: none;
 }
-
 main #products .accordion .categories-accordion .accordion-body ul li {
   margin-top: 10px;
 }
-
 main #products .accordion .bestsellers-accordion, main #products .accordion .extras-accordion {
   margin-top: 20px;
 }
-
 main #products .accordion .bestsellers-accordion .accordion-body .product, main #products .accordion .extras-accordion .accordion-body .product {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
-
 main #products .accordion .bestsellers-accordion .accordion-body .product .desc, main #products .accordion .extras-accordion .accordion-body .product .desc {
   margin-left: 15px;
 }
-
 main #products .accordion .bestsellers-accordion .accordion-body .product .desc p, main #products .accordion .bestsellers-accordion .accordion-body .product .desc span, main #products .accordion .extras-accordion .accordion-body .product .desc p, main #products .accordion .extras-accordion .accordion-body .product .desc span {
   color: red;
   margin-right: 10px;
 }
-
 main #products .accordion .bestsellers-accordion .accordion-body .product .desc p del, main #products .accordion .bestsellers-accordion .accordion-body .product .desc span del, main #products .accordion .extras-accordion .accordion-body .product .desc p del, main #products .accordion .extras-accordion .accordion-body .product .desc span del {
   color: gray;
   font-weight: 500;
 }
-
 main #ContactAndSubscribe {
   margin-top: 40px;
-  background-color: #f2f6f9;
+  background-color: rgb(242, 246, 249);
   padding-bottom: 30px;
 }
-
 main #ContactAndSubscribe .contact {
-  border: 1px solid #c9c9c9;
+  border: 1px solid rgb(201, 201, 201);
   padding: 25px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 main #ContactAndSubscribe .contact .text-center {
   text-align: center;
 }
-
 main #ContactAndSubscribe .contact .text-center .subtitle p {
   font-size: 19px;
   letter-spacing: 8px;
@@ -635,48 +491,40 @@ main #ContactAndSubscribe .contact .text-center .subtitle p {
   font-family: "Poppins", sans-serif;
   color: #eb4d4b;
 }
-
 main #ContactAndSubscribe .contact .text-center .title h1 {
   font-size: 40px;
   margin-bottom: 14px;
 }
-
 main #ContactAndSubscribe .contact .text-center .line {
   width: 80px;
   height: 4px;
   background: #eb4d4b;
   margin: 0 auto;
 }
-
 main #ContactAndSubscribe .contact .inputs {
   margin-top: 10px;
 }
-
 main #ContactAndSubscribe .contact .inputs input,
 main #ContactAndSubscribe .contact .inputs textarea {
   padding: 14px;
   margin-top: 20px;
   border-radius: 20px;
 }
-
 main #ContactAndSubscribe .contact .inputs button {
   border-radius: 40px;
   padding: 10px;
   margin: 15px auto;
 }
-
 main #ContactAndSubscribe .Subscribe {
-  border: 1px solid #c9c9c9;
+  border: 1px solid rgb(201, 201, 201);
   padding: 25px;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 main #ContactAndSubscribe .Subscribe .text-center {
   text-align: center;
 }
-
 main #ContactAndSubscribe .Subscribe .text-center .subtitle p {
   font-size: 19px;
   letter-spacing: 8px;
@@ -685,41 +533,34 @@ main #ContactAndSubscribe .Subscribe .text-center .subtitle p {
   font-family: "Poppins", sans-serif;
   color: #eb4d4b;
 }
-
 main #ContactAndSubscribe .Subscribe .text-center .title h1 {
   font-size: 40px;
   margin-bottom: 14px;
 }
-
 main #ContactAndSubscribe .Subscribe .text-center .line {
   width: 80px;
   height: 4px;
   background: #eb4d4b;
   margin: 0 auto;
 }
-
 main #ContactAndSubscribe .Subscribe .titleandcontent i {
   font-size: 45px;
   color: red;
   margin: 20px auto;
 }
-
 main #ContactAndSubscribe .Subscribe .input {
   width: 70%;
   margin: 30px auto;
   overflow: hidden;
 }
-
 main #ContactAndSubscribe .Subscribe .inputfocus {
   outline: blue;
 }
-
 main #ContactAndSubscribe .Subscribe .input input {
   position: relative;
   border-radius: 30px;
   padding: 15px;
 }
-
 main #ContactAndSubscribe .Subscribe .input button {
   position: absolute;
   border-radius: 40px;
@@ -729,93 +570,68 @@ main #ContactAndSubscribe .Subscribe .input button {
   right: 0px;
   z-index: 3;
 }
-
 main #ContactAndSubscribe .Subscribe .icons {
   margin-top: 30px;
   padding-bottom: 27px;
 }
-
 main #ContactAndSubscribe .Subscribe .icons i {
   margin-right: 5px;
   font-size: 35px;
-  -webkit-transition: 1.5s;
   transition: 1.5s;
 }
-
 main #ContactAndSubscribe .Subscribe .icons i:hover {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-  -webkit-transition: 1.5s;
+  transform: rotateY(360deg);
   transition: 1.5s;
 }
-
 main #ContactAndSubscribe .md-links .accordion-item {
   background-color: transparent;
   border: none;
 }
-
 main #ContactAndSubscribe .md-links .accordion-item .accordion-button {
   background-color: transparent;
   border: transparent;
   color: black;
 }
-
 main #ContactAndSubscribe .md-links .accordion-item .accordion-button:focus {
   outline: none;
   border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   color: black;
 }
-
 main #ContactAndSubscribe .md-links .accordion-item .accordion-body {
   padding: 0px;
 }
-
 main #ContactAndSubscribe .md-links .accordion-item .accordion-body ul li {
   list-style: none;
   margin-top: 10px;
 }
-
 main #ContactAndSubscribe .md-links .accordion-item .accordion-body ul li a {
   text-decoration: none;
   color: gray;
 }
-
 main #ContactAndSubscribe .lg-links {
   margin-top: 30px;
 }
-
 main #ContactAndSubscribe .lg-links ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 60%;
   margin: 0 auto;
 }
-
 main #ContactAndSubscribe .lg-links ul li {
   list-style: none;
   width: 20%;
   margin-bottom: 10px;
 }
-
 main #ContactAndSubscribe .lg-links ul li a {
   text-decoration: none;
   text-align: center;
-  color: #636363;
-  -webkit-transition: 1s;
+  color: rgb(99, 99, 99);
   transition: 1s;
 }
-
 main #ContactAndSubscribe .lg-links ul li a:hover {
   color: red;
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -823,31 +639,18 @@ footer {
   padding: 20px;
   background-color: black;
 }
-
 footer .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 footer .text h6 {
   margin-left: 30px;
 }
-
 footer .credit-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
 }
-
 footer .credit-cards img {
   margin-right: 10px;
-}
-/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=login.css.map */

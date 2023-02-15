@@ -14,8 +14,64 @@ $(document).ready(function () {
         $(".onhoveraccesories").removeClass('active');
       });    
 
+
+      $(".cart-icon").click(function (e) {
+        e.stopPropagation()
+      })
       
+      $(".cart-icon").click(function () {
+        $(".shopping-card-items").css("transform","translateX(300%)")
+        $("#header").css("filter", "brightness(100%)").css("transition","1s");
+        $(".user-icon-hover-lg").hide();
+        $(".search-icon-hover-lg").hide();
       
+      });
+
+      $("#header").click(function () {
+        $(".shopping-card-items").css("transform","translateX(400%)")
+        $("#header").css("filter", "brightness(100%)").css("transition","1s")
+        $(".search-icon-hover-lg").hide();
+        $(".user-icon-hover-lg").hide();
+        $(".user-icon-hover-md").hide();
+        $(".search-icon-hover-md").hide();
+        
+      });
+
+      $("#header").click(function () {
+        $(".shopping-card-items").css("transform","translateX(400%)")
+        $("#header").css("filter", "brightness(100%)").css("transition","1s")
+        $(".search-icon-hover-lg").hide();
+        $(".user-icon-hover-lg").hide();
+        $(".user-icon-hover-md").hide();
+        $(".search-icon-hover-md").hide();
+        
+      });
+    
+      $(".search-icon-lg").click(function (e) {
+        e.stopPropagation();
+        $(".search-icon-hover-lg").toggle();
+        $(".user-icon--lg").hide();
+
+      });
+      $(".user-icon-lg").click(function (e) {
+        e.stopPropagation();
+        $(".user-icon-hover-lg").toggle();
+        $(".search-icon-hover-lg").hide();
+      });
+
+
+      $(".search-icon-md").click(function (e) {
+        e.stopPropagation();
+        $(".search-icon-hover-md").toggle();
+        $(".user-icon-hover-md").hide();
+
+      });
+      $(".user-icon-md").click(function (e) {
+        e.stopPropagation();
+        $(".user-icon-hover-md").toggle();
+        $(".search-icon-hover-md").hide();
+      });
+    
       
       $('.slider').slick({
         infinite: true,
