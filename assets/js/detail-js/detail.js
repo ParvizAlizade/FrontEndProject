@@ -73,6 +73,32 @@ $(document).ready(function () {
       });
 
 
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+           
+          389:{
+            items:2,
+            nav:false,
+            infinite:true,
+          },
+            767:{
+                items:3,
+                nav:false,
+            infinite:true,
+
+            },
+            992:{
+                items:4,
+                loop:true,
+            infinite:true,
+            }
+        }
+    })
+
+
       $('.slider-images').slick({
         arrows:true,
         slidesToShow: 4,
@@ -94,15 +120,12 @@ $(document).ready(function () {
             }
           },
           {
-            breakpoint: 3901,
+            breakpoint: 390,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
             }
           }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
         ]
       });
     

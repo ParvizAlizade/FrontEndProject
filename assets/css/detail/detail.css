@@ -312,6 +312,11 @@ main #products .container .row .leftside .accordion .accordion-item-2 .table-bor
 main #products .container .row .leftside .accordion .accordion-item-2 .table-bordered td i {
   color: rgb(189, 189, 189);
 }
+main #products .container .row .leftside .accordion .accordion-item-2 .pagecount {
+  display: flex;
+  justify-content: end;
+  color: rgb(138, 138, 138);
+}
 main #products .container .row .leftside .accordion .accordion-item-2 .row .rightside {
   text-align: end;
   color: rgb(149, 149, 149);
@@ -342,6 +347,12 @@ main #products .container .row .leftside .accordion .accordion-item-2 .rating .r
 main #products .container .row .leftside .accordion .accordion-item-2 .button {
   display: flex;
   justify-content: end;
+}
+main #products .container .row .rightside {
+  position: sticky;
+  top: 0;
+  right: 0;
+  height: 80vh;
 }
 main #products .container .row .rightside .share {
   margin-top: 20px;
@@ -374,7 +385,8 @@ main #products .container .row .rightside .rating .star-icon {
   font-size: 12px;
   color: rgb(162, 162, 162);
 }
-main #products .container .row .rightside .rating .star-icon :nth-child(1), main #products .container .row .rightside .rating .star-icon :nth-child(2) {
+main #products .container .row .rightside .rating .star-icon :nth-child(1),
+main #products .container .row .rightside .rating .star-icon :nth-child(2) {
   color: rgb(228, 228, 0);
 }
 main #products .container .row .rightside .rating a {
@@ -388,6 +400,7 @@ main #products .container .row .rightside .price {
 main #products .container .row .rightside .price span {
   font-weight: 500;
   font-size: 14px;
+  color: rgb(69, 69, 69);
 }
 main #products .container .row .rightside .quantity {
   height: 12vh;
@@ -414,4 +427,375 @@ main #products .container .row .rightside .quantity .btn-dark:hover {
 main #products .container .row .rightside .quantity .btn-danger:hover {
   background-color: black;
   transition: 1s;
+}
+main #products .container .row .rightside .description {
+  margin-top: 20px;
+}
+main #products .container .row .rightside .description ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0px;
+}
+main #products .container .row .rightside .description ul .about {
+  border: 1px solid rgb(189, 189, 189);
+  text-align: center;
+  width: 45%;
+  margin-right: 16px;
+  margin-top: 20px;
+}
+main #products .container .row .rightside .description ul .about .title {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+main #products .container .row .rightside .description ul .about .title p {
+  color: black;
+  background-color: rgba(214, 214, 214, 0.5568627451);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  width: 90%;
+  margin-bottom: 0px;
+}
+main #products .container .row .rightside .description ul .about .desc {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main #products .container .row .rightside .description ul .about .desc span a {
+  text-decoration: none;
+  color: rgb(105, 105, 105);
+}
+main #RelatedProducts {
+  text-align: center;
+  margin-top: 100px;
+}
+main #RelatedProducts .owl-dot {
+  color: red;
+}
+main #RelatedProducts .subtitle p {
+  font-size: 16px;
+  letter-spacing: 8px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #ea4441;
+}
+main #RelatedProducts .title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #232323;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  margin-bottom: 25px;
+  padding-bottom: 1px;
+}
+main #RelatedProducts .line {
+  margin: 0 auto;
+  width: 80px;
+  height: 4px;
+  background: #eb4d4b;
+}
+main #RelatedProducts .products {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+main #RelatedProducts .products::-webkit-scrollbar {
+  display: none;
+}
+main #RelatedProducts .products .card {
+  border: none;
+  margin-top: 40px;
+  padding-left: 5px;
+  position: relative;
+  padding-right: 5px;
+}
+main #RelatedProducts .products .card .star-icon {
+  position: absolute;
+  bottom: 33%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main #RelatedProducts .products .card .images {
+  position: relative;
+  overflow: hidden;
+}
+main #RelatedProducts .products .card .images :nth-child(1) {
+  visibility: visible;
+}
+main #RelatedProducts .products .card .images :nth-child(2) {
+  display: none;
+}
+main #RelatedProducts .products .card .images i {
+  font-size: 15px;
+  border: 1px solid rgb(142, 142, 142);
+  box-shadow: 1px 1px 5px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  transition: 0.8s;
+}
+main #RelatedProducts .products .card .images .eye {
+  top: 10px;
+  right: -55px;
+}
+main #RelatedProducts .products .card .images .heart {
+  top: 55px;
+  right: -75px;
+}
+main #RelatedProducts .products .card .images .statistic {
+  top: 100px;
+  right: -95px;
+}
+main #RelatedProducts .products .card .card-body {
+  position: relative;
+  overflow: hidden;
+}
+main #RelatedProducts .products .card .card-body .card-title {
+  margin-bottom: 10px;
+}
+main #RelatedProducts .products .card .card-body .card-text {
+  font-size: 17px;
+  color: red;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+main #RelatedProducts .products .card .card-body .button {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+}
+main #RelatedProducts .products .card .card-body .list-button {
+  position: absolute;
+  bottom: 0px;
+  left: 15%;
+  transform: translate(-50%, 0);
+  transition: 0s;
+}
+main #RelatedProducts .products .card:hover .button {
+  bottom: 0px;
+  transition: 0.6s;
+}
+main #RelatedProducts .products .card:hover .images :nth-child(1) {
+  opacity: 0;
+  transition: 1s;
+  display: none;
+}
+main #RelatedProducts .products .card:hover .images :nth-child(2) {
+  display: block;
+  opacity: 1;
+  transition: 1s;
+}
+main #RelatedProducts .products .card:hover i {
+  transition: 0.8s;
+  right: 8px;
+}
+main #RelatedProducts .products .card:hover i:hover {
+  background-color: red;
+  color: white;
+}
+main #RelatedProducts .products .card:hover .eye {
+  top: 10px;
+  right: 10px;
+}
+main #RelatedProducts .products .card:hover .heart {
+  top: 55px;
+  right: 10px;
+}
+main #RelatedProducts .products .card:hover .statistic {
+  top: 100px;
+  right: 10px;
+}
+main #RelatedProducts .products .card:hover .button:hover {
+  background-color: black;
+  border: none;
+}
+main #ContactAndSubscribe {
+  background-color: rgb(242, 246, 249);
+  padding-bottom: 30px;
+  margin-top: 50px;
+}
+main #ContactAndSubscribe .contact {
+  border: 1px solid rgb(201, 201, 201);
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+main #ContactAndSubscribe .contact .text-center {
+  text-align: center;
+}
+main #ContactAndSubscribe .contact .text-center .subtitle p {
+  font-size: 19px;
+  letter-spacing: 8px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #eb4d4b;
+}
+main #ContactAndSubscribe .contact .text-center .title h1 {
+  font-size: 40px;
+  margin-bottom: 14px;
+}
+main #ContactAndSubscribe .contact .text-center .line {
+  width: 80px;
+  height: 4px;
+  background: #eb4d4b;
+  margin: 0 auto;
+}
+main #ContactAndSubscribe .contact .inputs {
+  margin-top: 10px;
+}
+main #ContactAndSubscribe .contact .inputs input,
+main #ContactAndSubscribe .contact .inputs textarea {
+  padding: 14px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+main #ContactAndSubscribe .contact .inputs button {
+  border-radius: 40px;
+  padding: 10px;
+  margin: 15px auto;
+}
+main #ContactAndSubscribe .Subscribe {
+  border: 1px solid rgb(201, 201, 201);
+  padding: 25px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+main #ContactAndSubscribe .Subscribe .text-center {
+  text-align: center;
+}
+main #ContactAndSubscribe .Subscribe .text-center .subtitle p {
+  font-size: 19px;
+  letter-spacing: 8px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #eb4d4b;
+}
+main #ContactAndSubscribe .Subscribe .text-center .title h1 {
+  font-size: 40px;
+  margin-bottom: 14px;
+}
+main #ContactAndSubscribe .Subscribe .text-center .line {
+  width: 80px;
+  height: 4px;
+  background: #eb4d4b;
+  margin: 0 auto;
+}
+main #ContactAndSubscribe .Subscribe .titleandcontent i {
+  font-size: 45px;
+  color: red;
+  margin: 20px auto;
+}
+main #ContactAndSubscribe .Subscribe .input {
+  width: 70%;
+  margin: 30px auto;
+  overflow: hidden;
+}
+main #ContactAndSubscribe .Subscribe .inputfocus {
+  outline: blue;
+}
+main #ContactAndSubscribe .Subscribe .input input {
+  position: relative;
+  border-radius: 30px;
+  padding: 15px;
+}
+main #ContactAndSubscribe .Subscribe .input button {
+  position: absolute;
+  border-radius: 40px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  right: 0px;
+  z-index: 3;
+}
+main #ContactAndSubscribe .Subscribe .icons {
+  margin-top: 30px;
+  padding-bottom: 27px;
+}
+main #ContactAndSubscribe .Subscribe .icons i {
+  margin-right: 5px;
+  font-size: 35px;
+  transition: 1.5s;
+}
+main #ContactAndSubscribe .Subscribe .icons i:hover {
+  transform: rotateY(360deg);
+  transition: 1.5s;
+}
+main #ContactAndSubscribe .md-links .accordion-item {
+  background-color: transparent;
+  border: none;
+}
+main #ContactAndSubscribe .md-links .accordion-item .accordion-button {
+  background-color: transparent;
+  border: transparent;
+  color: black;
+}
+main #ContactAndSubscribe .md-links .accordion-item .accordion-button:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: black;
+}
+main #ContactAndSubscribe .md-links .accordion-item .accordion-body {
+  padding: 0px;
+}
+main #ContactAndSubscribe .md-links .accordion-item .accordion-body ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+main #ContactAndSubscribe .md-links .accordion-item .accordion-body ul li a {
+  text-decoration: none;
+  color: gray;
+}
+main #ContactAndSubscribe .lg-links {
+  margin-top: 30px;
+}
+main #ContactAndSubscribe .lg-links ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
+}
+main #ContactAndSubscribe .lg-links ul li {
+  list-style: none;
+  width: 20%;
+  margin-bottom: 10px;
+}
+main #ContactAndSubscribe .lg-links ul li a {
+  text-decoration: none;
+  text-align: center;
+  color: rgb(99, 99, 99);
+  transition: 1s;
+}
+main #ContactAndSubscribe .lg-links ul li a:hover {
+  color: red;
+  transition: 1s;
+}
+
+footer {
+  padding: 20px;
+  background-color: black;
+}
+footer .text {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+footer .text h6 {
+  margin-left: 30px;
+}
+footer .credit-cards {
+  display: flex;
+  justify-content: end;
+}
+footer .credit-cards img {
+  margin-right: 10px;
 }/*# sourceMappingURL=detail.css.map */
