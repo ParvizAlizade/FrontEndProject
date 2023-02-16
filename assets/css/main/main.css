@@ -20,7 +20,7 @@ body {
     background-color: white;
     position: absolute;
     top: 0px;
-    z-index: 3;
+    z-index: 6;
   }
   #header .shopping-card-items p {
     padding: 10px;
@@ -136,24 +136,32 @@ body {
     left: 41%;
     width: 30%;
   }
+  #header .onhoveraccesories .right {
+    margin-left: 50px;
+  }
+  #header .onhoveraccesories .left {
+    margin-left: 20px;
+  }
   #header .onhoverdrone {
     position: absolute;
     left: 36%;
-    width: 40%;
-    transition: 4s;
+    width: 35%;
+  }
+  #header .onhoverdrone .center {
+    margin-left: 50px;
+    margin-right: 50px;
   }
   #header .onhoverdrone,
   #header .onhoveraccesories {
     display: none;
     z-index: 43333;
-    justify-content: space-around;
     border: 1px solid rgb(172, 172, 172);
     padding: 20px 10px 10px 10px;
     background-color: white;
   }
   #header .onhoverdrone.active,
   #header .onhoveraccesories.active {
-    visibility: visible;
+    display: flex;
   }
   #header .onhoverdrone .title,
   #header .onhoveraccesories .title {
@@ -251,16 +259,16 @@ body {
     overflow-x: hidden;
   }
   #header .shopping-card-items {
-    height: 45.98vh;
-    width: 25%;
+    height: 43vh;
     transform: translate(400%);
-    display: flex;
     flex-direction: column;
     transition: transform 0.5s ease-in-out;
     background-color: white;
     position: absolute;
     top: 0px;
-    z-index: 3;
+    z-index: 7;
+    width: 0px;
+    visibility: hidden;
   }
   #header .shopping-card-items p {
     padding: 10px;
@@ -283,7 +291,7 @@ body {
   #header .md-navbar .left .hamburgermenu .hamburger {
     z-index: 100;
     border: none;
-    background: white;
+    background: transparent;
     cursor: pointer;
   }
   #header .md-navbar .left .hamburgermenu .xmark {
@@ -343,10 +351,9 @@ body {
     border: 1px solid rgb(180, 180, 180);
     background-color: white;
     position: absolute;
-    top: 12%;
-    display: none;
     z-index: 35;
-    left: 6%;
+    right: 7%;
+    display: none;
   }
   #header .user-icon-hover-md hr {
     margin-top: 12px;
@@ -622,15 +629,173 @@ main #services p {
     transition: 1s;
   }
 }
+main #LatestProducts {
+  padding: 100px 0;
+  text-align: center;
+}
+main #LatestProducts .subtitle p {
+  font-size: 16px;
+  letter-spacing: 8px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #ea4441;
+}
+main #LatestProducts .title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #232323;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  margin-bottom: 25px;
+  padding-bottom: 1px;
+}
+main #LatestProducts .line {
+  margin: 0 auto;
+  width: 80px;
+  height: 4px;
+  background: #eb4d4b;
+}
+main #LatestProducts .buttons {
+  margin-top: 30px;
+}
+main #LatestProducts .products {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+main #LatestProducts .products::-webkit-scrollbar {
+  display: none;
+}
+main #LatestProducts .products .second_story {
+  display: none;
+}
+main #LatestProducts .products .third_story {
+  display: none;
+}
+main #LatestProducts .products .productcarousel {
+  display: flex;
+  flex-wrap: wrap;
+}
+main #LatestProducts .products .productcarousel .row {
+  width: 95%;
+}
+main #LatestProducts .products .productcarousel .row .card {
+  border: none;
+  margin-top: 40px;
+  padding-left: 5px;
+  position: relative;
+  padding-right: 5px;
+}
+main #LatestProducts .products .productcarousel .row .card .star-icon {
+  position: absolute;
+  bottom: 33%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main #LatestProducts .products .productcarousel .row .card .images {
+  position: relative;
+  overflow: hidden;
+}
+main #LatestProducts .products .productcarousel .row .card .images :nth-child(1) {
+  visibility: visible;
+}
+main #LatestProducts .products .productcarousel .row .card .images :nth-child(2) {
+  display: none;
+}
+main #LatestProducts .products .productcarousel .row .card .images i {
+  font-size: 15px;
+  border: 1px solid rgb(142, 142, 142);
+  box-shadow: 1px 1px 5px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  transition: 0.8s;
+}
+main #LatestProducts .products .productcarousel .row .card .images .eye {
+  top: 10px;
+  right: -55px;
+}
+main #LatestProducts .products .productcarousel .row .card .images .heart {
+  top: 55px;
+  right: -75px;
+}
+main #LatestProducts .products .productcarousel .row .card .images .statistic {
+  top: 100px;
+  right: -95px;
+}
+main #LatestProducts .products .productcarousel .row .card .card-body {
+  position: relative;
+  overflow: hidden;
+}
+main #LatestProducts .products .productcarousel .row .card .card-body .card-title {
+  margin-bottom: 10px;
+}
+main #LatestProducts .products .productcarousel .row .card .card-body .card-text {
+  font-size: 17px;
+  color: red;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+main #LatestProducts .products .productcarousel .row .card .card-body .button {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+}
+main #LatestProducts .products .productcarousel .row .card .card-body .list-button {
+  position: absolute;
+  bottom: 0px;
+  left: 15%;
+  transform: translate(-50%, 0);
+  transition: 0s;
+}
+main #LatestProducts .products .productcarousel .row .card:hover .button {
+  bottom: 0px;
+  transition: 0.6s;
+}
+main #LatestProducts .products .productcarousel .row .card:hover .images :nth-child(1) {
+  opacity: 0;
+  transition: 1s;
+  display: none;
+}
+main #LatestProducts .products .productcarousel .row .card:hover .images :nth-child(2) {
+  display: block;
+  opacity: 1;
+  transition: 1s;
+}
+main #LatestProducts .products .productcarousel .row .card:hover i {
+  transition: 0.8s;
+  right: 8px;
+}
+main #LatestProducts .products .productcarousel .row .card:hover i:hover {
+  background-color: red;
+  color: white;
+}
+main #LatestProducts .products .productcarousel .row .card:hover .eye {
+  top: 10px;
+  right: 10px;
+}
+main #LatestProducts .products .productcarousel .row .card:hover .heart {
+  top: 55px;
+  right: 10px;
+}
+main #LatestProducts .products .productcarousel .row .card:hover .statistic {
+  top: 100px;
+  right: 10px;
+}
+main #LatestProducts .products .productcarousel .row .card:hover .button:hover {
+  background-color: black;
+  border: none;
+}
 main #CustomerReview {
   height: 87vh;
   background-image: url("https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/testimonialbackground.png");
   text-align: center;
   display: flex;
   align-items: center;
-}
-main #CustomerReview .owl-dot {
-  color: red;
 }
 main #CustomerReview .subtitle p {
   font-size: 16px;
