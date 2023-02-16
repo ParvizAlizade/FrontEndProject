@@ -1,0 +1,417 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#header .offer {
+  background-color: black;
+}
+#header .offer .all {
+  height: 7vh;
+}
+#header .offer .all ul {
+  margin-top: 15px;
+}
+#header .offer .all ul li {
+  list-style: none;
+  margin-left: 20px;
+  color: white;
+}
+#header .offer .all ul li span {
+  font-size: 14px;
+  font-weight: bold;
+}
+#header .offer .all ul li a {
+  text-decoration: none;
+}
+#header .offer .all ul li a i {
+  border-right: 1px solid black;
+  padding-right: 10px;
+}
+@media screen and (min-width: 992px) {
+  #header #allheader .topheader {
+    padding-top: 20px;
+    z-index: 2;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  #header #allheader .topheader .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #header #allheader .topheader .container .row .allnav .lg-navbar {
+    display: flex;
+    align-items: center;
+  }
+  #header #allheader .topheader .container .row .allnav .lg-navbar .navbar-logo {
+    display: flex;
+    justify-content: center;
+  }
+  #header #allheader .topheader .container .row .allnav .lg-navbar .menu {
+    display: flex;
+  }
+  #header #allheader .topheader .container .row .allnav .lg-navbar .menu ul {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    align-items: end;
+  }
+  #header #allheader .topheader .container .row .allnav .lg-navbar .menu ul li {
+    list-style-type: none;
+  }
+  #header #allheader .topheader .container .row .allnav .lg-navbar .menu ul li a {
+    color: black !important;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  #header #allheader .topheader .container .row .allnav .lg-navbar .menu ul li a:hover {
+    color: red !important;
+    transition: 0.4s;
+  }
+  #header #allheader .topheader .container .row .allnav .lg-navbar .icons {
+    display: flex;
+    justify-content: center;
+  }
+  #header #allheader .topheader .container .row .allnav .lg-navbar .icons i {
+    font-size: 17px;
+    margin-right: 20px;
+    color: black;
+    transition: 0.6s;
+  }
+  #header #allheader .topheader .container .row .allnav .lg-navbar .icons i:hover {
+    color: red;
+    transition: 0.6s;
+  }
+  #header .onhoveraccesories {
+    position: absolute;
+    left: 41%;
+    width: 30%;
+  }
+  #header .onhoverdrone {
+    position: absolute;
+    left: 36%;
+    width: 40%;
+  }
+  #header .onhoverdrone,
+  #header .onhoveraccesories {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(172, 172, 172);
+    padding: 20px 10px 10px 10px;
+    visibility: hidden;
+    background-color: rgb(255, 255, 255);
+  }
+  #header .onhoverdrone.active,
+  #header .onhoveraccesories.active {
+    visibility: visible;
+  }
+  #header .onhoverdrone .title,
+  #header .onhoveraccesories .title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+  }
+  #header .onhoverdrone .title h6 a,
+  #header .onhoveraccesories .title h6 a {
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+    font-size: 17px;
+  }
+  #header .onhoverdrone p,
+  #header .onhoveraccesories p {
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  #header .onhoverdrone p a,
+  #header .onhoveraccesories p a {
+    color: rgb(52, 52, 52);
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #header .allnav .md-navbar {
+    height: 6vh;
+    align-items: center;
+    display: flex;
+  }
+  #header .allnav .md-navbar i {
+    font-size: 18px;
+  }
+  #header .allnav .md-navbar .left .hamburgermenu .menuItem {
+    display: block;
+    font-size: 20px;
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+  }
+  #header .allnav .md-navbar .left .hamburgermenu .hamburger {
+    z-index: 100;
+    border: none;
+    background: white;
+    cursor: pointer;
+  }
+  #header .allnav .md-navbar .left .hamburgermenu .xmark {
+    display: none;
+    justify-content: flex-end;
+  }
+  #header .allnav .md-navbar .left .hamburgermenu .menu {
+    transform: translateX(-100%);
+    transition: transform 0.7s;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 40%;
+    bottom: 0;
+    z-index: 99;
+    background: white;
+    color: white;
+    list-style: none;
+    position: fixed;
+    padding-top: 4rem;
+    height: 100vh;
+  }
+  #header .allnav .md-navbar .left .hamburgermenu .menu .accordion-item {
+    border: none;
+  }
+  #header .allnav .md-navbar .left .hamburgermenu .menu .accordion-body li {
+    list-style-type: none;
+  }
+  #header .allnav .md-navbar .left .hamburgermenu .menu .accordion-body li a {
+    text-decoration: none;
+    color: black;
+  }
+  #header .allnav .md-navbar .left .hamburgermenu .showMenu {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main #breadcumb {
+    background-color: rgb(238, 238, 238);
+    height: 20vh;
+  }
+  main #breadcumb .left {
+    height: 20vh;
+    background-image: url("https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/breadcrumb.png");
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  main #breadcumb ul {
+    display: flex;
+  }
+  main #breadcumb ul li {
+    list-style: none;
+    margin-left: 20px;
+  }
+  main #breadcumb ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+  }
+  main #breadcumb ul li a i {
+    border-right: 1px solid black;
+    font-size: 12px;
+    padding-right: 10px;
+  }
+  main #breadcumb ul li a:hover {
+    color: red;
+    transition: 0.3s;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  main #breadcumb {
+    background-color: rgb(238, 238, 238);
+    height: 10vh;
+  }
+  main #breadcumb .left {
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  main #breadcumb .left ul {
+    display: flex;
+    align-items: center;
+  }
+  main #breadcumb .left ul :nth-child(2) {
+    border-right: 1px solid black;
+    padding-right: 10px;
+  }
+  main #breadcumb .left ul li {
+    list-style: none;
+    margin-left: 20px;
+  }
+  main #breadcumb .left ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+  }
+  main #breadcumb .left ul li a i {
+    border-right: 1px solid black;
+    font-size: 20px;
+    padding-right: 10px;
+  }
+  main #breadcumb .left ul li a:hover {
+    color: red;
+    transition: 0.3s;
+  }
+}
+main #products {
+  margin-top: 30px;
+}
+main #products .slick-prev {
+  top: 50%;
+  left: -20px;
+  border-radius: 50%;
+}
+main #products .slick-prev:hover {
+  background-color: black;
+}
+main #products .slick-next {
+  top: 49%;
+  border-radius: 50%;
+  right: -5px;
+}
+main #products .slick-next:hover {
+  background-color: black;
+}
+main #products .container .row .leftside .slider-images {
+  margin-top: 30px;
+}
+main #products .container .row .leftside .slider-images img {
+  width: 90% !important;
+}
+main #products .container .row .leftside .accordion .accordion-item-1 .accordion-body p {
+  color: #666;
+  font-weight: 400;
+}
+main #products .container .row .leftside .accordion .accordion-item-1 .accordion-body li {
+  color: #666;
+  font-weight: 400;
+}
+main #products .container .row .leftside .accordion .accordion-item-2 {
+  border: none;
+}
+main #products .container .row .leftside .accordion .accordion-item-2 .table-bordered {
+  border-color: #e9e9e9;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  width: 100%;
+  background-color: transparent;
+}
+main #products .container .row .leftside .accordion .accordion-item-2 .table-bordered td {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 15px;
+  color: #232323;
+  font-weight: 500;
+}
+main #products .container .row .leftside .accordion .accordion-item-2 .table-bordered td i {
+  color: rgb(189, 189, 189);
+}
+main #products .container .row .leftside .accordion .accordion-item-2 .row .rightside {
+  text-align: end;
+  color: rgb(149, 149, 149);
+}
+main #products .container .row .leftside .accordion .accordion-item-2 .form label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main #products .container .row .leftside .accordion .accordion-item-2 .form i {
+  color: red;
+  font-size: 11px;
+}
+main #products .container .row .leftside .accordion .accordion-item-2 .rating {
+  display: flex;
+  margin-top: 10px;
+}
+main #products .container .row .leftside .accordion .accordion-item-2 .rating i {
+  font-size: 12px;
+  color: red;
+}
+main #products .container .row .leftside .accordion .accordion-item-2 .rating .radios {
+  margin-left: 20px;
+}
+main #products .container .row .leftside .accordion .accordion-item-2 .rating .radios span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+main #products .container .row .leftside .accordion .accordion-item-2 .button {
+  display: flex;
+  justify-content: end;
+}
+main #products .container .row .rightside .share {
+  margin-top: 20px;
+}
+main #products .container .row .rightside .share span {
+  color: gray;
+  margin-right: 20px;
+}
+main #products .container .row .rightside .share .buttontweet {
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: 500;
+  font-size: 10px;
+  cursor: pointer;
+}
+main #products .container .row .rightside .share .buttonshare {
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+main #products .container .row .rightside .rating {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+main #products .container .row .rightside .rating .star-icon {
+  display: inline;
+  font-size: 12px;
+  color: rgb(162, 162, 162);
+}
+main #products .container .row .rightside .rating .star-icon :nth-child(1), main #products .container .row .rightside .rating .star-icon :nth-child(2) {
+  color: rgb(228, 228, 0);
+}
+main #products .container .row .rightside .rating a {
+  color: gray;
+  text-decoration: none;
+  margin-left: 15px;
+}
+main #products .container .row .rightside .price {
+  margin-top: 40px;
+}
+main #products .container .row .rightside .price span {
+  font-weight: 500;
+  font-size: 14px;
+}
+main #products .container .row .rightside .quantity {
+  height: 12vh;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  border-top: 1px solid rgb(194, 194, 194);
+}
+main #products .container .row .rightside .quantity button {
+  margin-left: 10px;
+  transition: 1s;
+  border: none;
+  border-radius: 0px;
+}
+main #products .container .row .rightside .quantity label {
+  margin-right: 10px;
+}
+main #products .container .row .rightside .quantity .btn-dark:hover {
+  background-color: red;
+  transition: 1s;
+  border: none;
+}
+main #products .container .row .rightside .quantity .btn-danger:hover {
+  background-color: black;
+  transition: 1s;
+}/*# sourceMappingURL=detail.css.map */

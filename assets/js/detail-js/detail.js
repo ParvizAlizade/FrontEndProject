@@ -73,6 +73,39 @@ $(document).ready(function () {
       });
 
 
+      $('.slider-images').slick({
+        arrows:true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 2000,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll:1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 3901,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    
     const menu = document.querySelector(".menu");
     const menuItems = document.querySelectorAll(".menuItem");
     const hamburger= document.querySelector(".hamburger");
@@ -92,47 +125,19 @@ $(document).ready(function () {
         hamburger.style.position="fixed"
       }
     }
+    
     hamburger.addEventListener("click", toggleMenu);
+    
     menuItems.forEach( 
       function(menuItem) { 
         menuItem.addEventListener("click", toggleMenu);
       }
     )
 
-
-    var $gridCont = $('.grid-container');
-   
-    function gridList(e) {
-      var $gridCont = $('.grid-container')
-      $(".card-body .about").addClass("d-none");
-      $(".card-body").addClass("text-center");
-      $(".card-body .button").removeClass("list-button");
-      $(".star-icon").removeClass("d-none");
-      $(".star-icon").addClass("d-block");
-
-      
-      e.preventDefault();
-      $gridCont.removeClass('list-view');
-      $(".card-body .about").addClass("d-none");
-    }
-
-    function showList(e) {
-      $(".card-body .button").addClass("list-button");
-      $(".star-icon").removeClass("d-block");
-      $(".star-icon").addClass("d-none");
-
-
-      e.preventDefault();
-      if ($gridCont.hasClass('list-view')) {
-      }
-      else{
-        $gridCont.addClass('list-view');
-        $(".card-body .about").removeClass("d-none");
-        $(".card-body").removeClass("text-center");
-      }
-    }
-    
-    $(document).on('click', '.grid-icon', gridList);
-    $(document).on('click', '.list-icon', showList);
-    
-    });
+      $("header").mouseenter(function () {
+        $(".slick-prev, .slick-next").css("opacity",1).css("transition","0.8s")
+      })
+      $("header").mouseleave(function () {
+        $(".slick-prev, .slick-next").css("opacity",0).css("transition","0.8s")
+      })
+ });

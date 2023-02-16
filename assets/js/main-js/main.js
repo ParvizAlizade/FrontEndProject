@@ -15,6 +15,10 @@ $(document).ready(function () {
       });    
 
 
+      $(".slick-arrow").click(function () {
+        alert("31");
+      })
+
       $(".cart-icon").click(function (e) {
         e.stopPropagation()
       })
@@ -72,6 +76,74 @@ $(document).ready(function () {
         $(".search-icon-hover-md").hide();
       });
     
+
+      $(window).scroll(function () {
+      if($(window).scrollTop()>75){
+        $(".lg-navbar").css(
+          {
+            position:"fixed",
+            transition:"0.3s",
+            top:0,
+            left:0,
+            backgroundColor:"rgb(130, 130, 130)",
+            paddingTop:"10px",
+            paddingBottom:"10px",
+            paddingRight:"150px",
+            paddingLeft:"210px"
+
+          }
+        )
+      }
+
+      
+      else{
+        $(".lg-navbar").css(
+          {
+            position:"static",
+            width:"100%",
+            backgroundColor:"transparent",
+            paddingTop:"10px",
+            paddingBottom:"10px",
+            paddingRight:"20px",
+            paddingLeft:"90px"
+          }
+        )
+      }
+      })
+
+
+
+
+      $(window).scroll(function () {
+        if($(window).scrollTop()>75){
+          $(".md-navbar").css(
+            {
+              position:"fixed",
+              top:0,
+              left:0,
+              backgroundColor:"rgb(130, 130, 130)",
+              paddingTop:"10px",
+              paddingBottom:"10px",
+              paddingRight:"20px",
+              paddingLeft:"100px",
+  
+            }
+          )
+        }
+        else{
+          $(".md-navbar").css(
+            {
+              position:"static",
+              width:"100%",
+              backgroundColor:"transparent",
+              paddingTop:"10px",
+              paddingBottom:"10px",
+              paddingRight:"20px",
+              paddingLeft:"90px"
+            }
+          )
+        }
+        })
       
       $('.slider').slick({
         infinite: true,
@@ -218,16 +290,10 @@ $(document).ready(function () {
       }
     )
 
-
-
-
-
       $("header").mouseenter(function () {
         $(".slick-prev, .slick-next").css("opacity",1).css("transition","0.8s")
       })
       $("header").mouseleave(function () {
         $(".slick-prev, .slick-next").css("opacity",0).css("transition","0.8s")
       })
-  
-
-    });
+ });

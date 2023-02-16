@@ -140,14 +140,15 @@ body {
     position: absolute;
     left: 36%;
     width: 40%;
+    transition: 4s;
   }
   #header .onhoverdrone,
   #header .onhoveraccesories {
-    display: flex;
+    display: none;
+    z-index: 43333;
     justify-content: space-around;
     border: 1px solid rgb(172, 172, 172);
     padding: 20px 10px 10px 10px;
-    visibility: hidden;
     background-color: white;
   }
   #header .onhoverdrone.active,
