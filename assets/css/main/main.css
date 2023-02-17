@@ -11,6 +11,7 @@ body {
 
 @media screen and (min-width: 992px) {
   #header .shopping-card-items {
+    padding: 0 20px;
     height: 100vh;
     width: 25%;
     transform: translate(400%);
@@ -21,6 +22,44 @@ body {
     position: absolute;
     top: 0px;
     z-index: 6;
+  }
+  #header .shopping-card-items .end {
+    border-top: 1px solid lightgray;
+  }
+  #header .shopping-card-items .end button {
+    border: none;
+    height: 44px;
+    width: 47%;
+    transition: 0.4s;
+  }
+  #header .shopping-card-items .end .viewCart {
+    margin: 0 6px;
+    background-color: #eb4d4b;
+    color: white;
+  }
+  #header .shopping-card-items .end .viewCart:hover {
+    background-color: #333;
+  }
+  #header .shopping-card-items .end .checkOut {
+    background-color: #333;
+    color: white;
+  }
+  #header .shopping-card-items .end .checkOut:hover {
+    background-color: #eb4d4b;
+  }
+  #header .shopping-card-items .box::-webkit-scrollbar {
+    display: none;
+  }
+  #header .shopping-card-items .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  #header .shopping-card-items .title span {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
   }
   #header .shopping-card-items p {
     padding: 10px;
@@ -256,9 +295,11 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   #header {
-    overflow-x: hidden;
+    padding: 0;
   }
   #header .shopping-card-items {
+    height: 100vh !important;
+    display: none;
     height: 43vh;
     transform: translate(400%);
     flex-direction: column;
@@ -270,6 +311,44 @@ body {
     width: 0px;
     visibility: hidden;
   }
+  #header .shopping-card-items .end {
+    border-top: 1px solid lightgray;
+  }
+  #header .shopping-card-items .end button {
+    border: none;
+    height: 44px;
+    width: 47%;
+    transition: 0.4s;
+  }
+  #header .shopping-card-items .end .viewCart {
+    margin: 0 6px;
+    background-color: #eb4d4b;
+    color: white;
+  }
+  #header .shopping-card-items .end .viewCart:hover {
+    background-color: #333;
+  }
+  #header .shopping-card-items .end .checkOut {
+    background-color: #333;
+    color: white;
+  }
+  #header .shopping-card-items .end .checkOut:hover {
+    background-color: #eb4d4b;
+  }
+  #header .shopping-card-items .box::-webkit-scrollbar {
+    display: none;
+  }
+  #header .shopping-card-items .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  #header .shopping-card-items .title span {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
   #header .shopping-card-items p {
     padding: 10px;
     border-bottom: 1px solid rgb(222, 222, 222);
@@ -278,6 +357,10 @@ body {
     height: 6vh;
     align-items: center;
     display: flex;
+  }
+  #header .md-navbar a {
+    text-decoration: none;
+    color: black;
   }
   #header .md-navbar i {
     font-size: 18px;
@@ -667,14 +750,13 @@ main #LatestProducts .products {
 main #LatestProducts .products::-webkit-scrollbar {
   display: none;
 }
-main #LatestProducts .products .second_story {
+main #LatestProducts .products .secound_story {
   display: none;
 }
 main #LatestProducts .products .third_story {
   display: none;
 }
 main #LatestProducts .products .productcarousel {
-  display: flex;
   flex-wrap: wrap;
 }
 main #LatestProducts .products .productcarousel .row {
@@ -738,12 +820,23 @@ main #LatestProducts .products .productcarousel .row .card .card-body .card-text
   font-weight: 500;
   margin-bottom: 20px;
 }
-main #LatestProducts .products .productcarousel .row .card .card-body .button {
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  color: white;
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  main #LatestProducts .products .productcarousel .row .card .card-body .button {
+    position: absolute;
+    bottom: -65px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+  }
+}
+@media screen and (min-width: 992px) {
+  main #LatestProducts .products .productcarousel .row .card .card-body .button {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+  }
 }
 main #LatestProducts .products .productcarousel .row .card .card-body .list-button {
   position: absolute;

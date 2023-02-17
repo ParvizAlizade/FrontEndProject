@@ -409,21 +409,30 @@ main #products .accordion .categories-accordion .accordion-body ul {
 main #products .accordion .categories-accordion .accordion-body ul li {
   margin-top: 10px;
 }
-main #products .accordion .bestsellers-accordion, main #products .accordion .extras-accordion {
+main #products .accordion .bestsellers-accordion,
+main #products .accordion .extras-accordion {
   margin-top: 20px;
 }
-main #products .accordion .bestsellers-accordion .accordion-body .product, main #products .accordion .extras-accordion .accordion-body .product {
+main #products .accordion .bestsellers-accordion .accordion-body .product,
+main #products .accordion .extras-accordion .accordion-body .product {
   display: flex;
   margin-top: 20px;
 }
-main #products .accordion .bestsellers-accordion .accordion-body .product .desc, main #products .accordion .extras-accordion .accordion-body .product .desc {
+main #products .accordion .bestsellers-accordion .accordion-body .product .desc,
+main #products .accordion .extras-accordion .accordion-body .product .desc {
   margin-left: 15px;
 }
-main #products .accordion .bestsellers-accordion .accordion-body .product .desc p, main #products .accordion .bestsellers-accordion .accordion-body .product .desc span, main #products .accordion .extras-accordion .accordion-body .product .desc p, main #products .accordion .extras-accordion .accordion-body .product .desc span {
+main #products .accordion .bestsellers-accordion .accordion-body .product .desc p,
+main #products .accordion .bestsellers-accordion .accordion-body .product .desc span,
+main #products .accordion .extras-accordion .accordion-body .product .desc p,
+main #products .accordion .extras-accordion .accordion-body .product .desc span {
   color: red;
   margin-right: 10px;
 }
-main #products .accordion .bestsellers-accordion .accordion-body .product .desc p del, main #products .accordion .bestsellers-accordion .accordion-body .product .desc span del, main #products .accordion .extras-accordion .accordion-body .product .desc p del, main #products .accordion .extras-accordion .accordion-body .product .desc span del {
+main #products .accordion .bestsellers-accordion .accordion-body .product .desc p del,
+main #products .accordion .bestsellers-accordion .accordion-body .product .desc span del,
+main #products .accordion .extras-accordion .accordion-body .product .desc p del,
+main #products .accordion .extras-accordion .accordion-body .product .desc span del {
   color: gray;
   font-weight: 500;
 }

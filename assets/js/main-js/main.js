@@ -24,9 +24,6 @@ $(document).ready(function () {
 
 
 
-
-
-
   //#region  Hamburger Menu
 
 
@@ -73,8 +70,17 @@ $(document).ready(function () {
     e.stopPropagation()
   })
 
+  $(".X").click(function () {
+    $(".shopping-card-items").css("transform", "translateX(400%)").css("display", "none")
+
+  })
+
+  $(".shopping-card-items").click(function (e) {
+    e.stopPropagation()
+  })
+
   $(".cart-icon").click(function () {
-    $(".shopping-card-items").css("visibility", "visible").css("width", "25%").css("transform", "translateX(300%)")
+    $(".shopping-card-items").css("visibility", "visible").css("width", "25%").css("transform", "translateX(300%)").css("display", "flex")
     $("#header").css("filter", "brightness(100%)").css("transition", "1s");
     $(".user-icon-hover-lg").hide();
     $(".search-icon-hover-lg").hide();
@@ -300,12 +306,12 @@ $(document).ready(function () {
 
 
 
-//#region Latest Products Crousel
+  //#region Latest Products Crousel
 
   $('.productcarousel').owlCarousel({
     loop: true,
     margin: 10,
-    dots:false,
+    dots: false,
     responsiveClass: true,
     responsive: {
 
@@ -321,7 +327,7 @@ $(document).ready(function () {
   })
 
 
-//#endregion
+  //#endregion
 
   $("header").mouseenter(function () {
     $(".slick-prev, .slick-next").css("opacity", 1).css("transition", "0.8s")
@@ -347,13 +353,13 @@ $(document).ready(function () {
     }
   }
 
-  $(".cat-1").click(function () {
+  $(".featured-button").click(function () {
     filterGroup("group-1");
   });
-  $(".cat-2").click(function () {
+  $(".bestsellers-button").click(function () {
     filterGroup("group-2");
   });
-  $(".cat-3").click(function () {
+  $(".newarrivals-button").click(function () {
     filterGroup("group-3");
   });
 });
